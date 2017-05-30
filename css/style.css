@@ -96,6 +96,10 @@ li {
 
 /* Images */
 
+figure {
+  margin: 0;
+}
+
 article img {
   display: block;
   max-width: 100%;
@@ -103,9 +107,8 @@ article img {
   margin: auto;
 }
 
-/* Image captions */
-img + em,
-a + em {
+figcaption,
+img + em {
   display: block;
   padding-top: 10px;
   text-align: center;
