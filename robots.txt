@@ -1,0 +1,5 @@
+---
+layout: null  # Otherwise would use default layout
+---
+user-agent: *
+disallow:
