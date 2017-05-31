@@ -5,6 +5,7 @@ author:
   name: Arthur Hammer
   email: arthur@ahammer.me
   github:  arthurhammer
+  stackoverflow: 4994382
 repo: https://github.com/arthurhammer/ahammer.me
 
 # Build
@@ -48,4 +49,5 @@ social:
   name: Arthur Hammer
   links:
     - https://github.com/arthurhammer
+    - https://stackoverflow.com/users/4994382
 google_site_verification: knvANMeDeDlyFLBmV6H8_CZyVgm0ODw1ZEJEmYh2JQM
