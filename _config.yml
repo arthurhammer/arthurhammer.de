@@ -10,7 +10,7 @@ repo: https://github.com/arthurhammer/ahammer.me
 
 # Build
 url: "http://ahammer.me"
-permalink: /:year/:title
+permalink: /:year/:title/
 host: 0.0.0.0
 
 include:
@@ -42,7 +42,7 @@ highlighter: rouge
 
 # jekyll-paginate
 paginate: 7
-paginate_path: "/posts/:num/"
+paginate_path: "/blog/:num/"
 
 # jekyll-seo-tag
 social:

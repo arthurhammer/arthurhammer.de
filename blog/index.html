@@ -4,7 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
   <article class="mb12">
-    <a href="{{ post.url | relative_url }}" class="link-plain"><h1>{{ post.title }}</h1></a>
+    <h1><a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title }}</a></h1>
 
     {{ post.content }}
 
@@ -16,10 +16,10 @@ layout: default
 
 <nav>
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="fl">Previous</a>
+  <a href="{{ paginator.previous_page_path }}" rel="prev" class="fl">Previous</a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="fr">Next</a>
+  <a href="{{ paginator.next_page_path }}" rel="next" class="fr">Next</a>
   {% endif %}
 </nav>
