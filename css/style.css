@@ -78,7 +78,7 @@ a.link-plain,
 /* Lists */
 
 /* Keep style on nested lists */
-li {
+ul li {
   list-style-type: disc;
 }
 
