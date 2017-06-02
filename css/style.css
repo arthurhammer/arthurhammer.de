@@ -103,7 +103,7 @@ figure {
 article img {
   display: block;
   max-width: 100%;
-  max-height: 600px;
+  max-height: 800px;
   margin: auto;
 }
 
@@ -115,6 +115,12 @@ img + em {
   color: gray;
   font-size: 0.9rem;
   font-style: normal;
+}
+
+/* Hack for _includes/figure.html. */
+img.bordered,
+.bordered img {
+  border: 1px solid #ddd;
 }
 
 /* Spacing */
@@ -156,8 +162,8 @@ img + em {
 .mb6 {
   margin-bottom: 60px;
 }
-.mb12 {
-  margin-bottom: 120px;
+.mb20 {
+  margin-bottom: 200px;
 }
 
 /* Util */
@@ -165,36 +171,42 @@ img + em {
 .quiet { color: gray; }
 .strong, strong { font-weight: bold; }
 .inline { display: inline-block; }
-.lowercase { text-transform: lowercase; }
-.center { text-align: center; }
-.dot { border-radius: 50%; }
 .hidden { display: none; }
 .fl { float: left; }
 .fr { float: right; }
+.lowercase { text-transform: lowercase; }
+.center { text-align: center; }
+.dot { border-radius: 50%; }
+.white-on-white { border: 1px solid #ddd; }
 
 .large { font-size: 1.2rem; }
-.small, small { font-size:  0.9rem; }
+.small, small, .footnotes { font-size:  0.9rem; }
 .tiny  { font-size:  .8rem; }
+
+.footnotes { border-top: 1px solid #ccc; }
 
 /* Code */
 
 pre {
   padding: 10px 30px;
-
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-code {
+code { /* Inline code */
   font-family: San Francisco Mono, Menlo, Monaco, monospace;
   font-size: .9rem;
 
   /* Break inline code */
   white-space: pre-wrap;
   word-wrap: break-word;
+  background-color: #eee;
 }
 
-pre code {
+pre code { /* Code blocks */
   font-size: .7rem;
 
   /* Don't break code blocks */

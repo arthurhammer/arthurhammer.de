@@ -9,11 +9,11 @@ layout: default
 <h2>Posts</h2>
 
 <ul class="list-unstyled spacious">
+  <li class="mb1"><a href="{{ "/blog/" | relative_url }}">See all posts.</a></li>
 {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="quiet small">{{ post.date | date: "%B %Y" }}</time>
   </li>
 {% endfor %}
-  <li class="pad1y"><a href="{{ "/blog/" | relative_url }}">All posts</a></li>
 </ul>
