@@ -10,7 +10,7 @@ repo: https://github.com/arthurhammer/ahammer.me
 
 # Build
 url: "http://ahammer.me"
-permalink: /:year/:title/
+permalink: /:year/:month/:title/
 host: 0.0.0.0
 
 include:
