@@ -1,23 +1,22 @@
-# ahammer.me
+# [ahammer.me](http://ahammer.me)
 
 My personal website and blog, [ahammer.me](http://ahammer.me).
 
-Feedback and contributions are welcome.
-
+A simple static site powered by [Jekyll](https://jekyllrb.com).
 
 ## Build
 
-The site is built with [Jekyll](https://jekyllrb.com) and [bundler](https://bundler.io).
+Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.io) is installed.
 
 **Install dependencies**:
 
-    bundle install --deployment
+    bundle install --path=vendor/bundle
 
 **Run a local server**:
 
     bundle exec jekyll serve
 
-**Build**:
+**Build site**:
 
     bundle exec jekyll build
 

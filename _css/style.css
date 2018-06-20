@@ -21,27 +21,25 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.5rem;
   line-height: 1.25;
 }
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 blockquote {
@@ -60,7 +58,7 @@ hr {
 /* Links */
 
 a {
-  color: blue;
+  color: #2C6FD3;
   text-decoration: none;
   text-decoration-skip: ink;
 }
@@ -69,10 +67,13 @@ a:hover {
   text-decoration: underline;
 }
 
+a:visited {
+  color: #00008b;
+}
+
 a.link-plain,
 .link-plain a {
   color: inherit;
-  text-decoration: inherit;
 }
 
 /* Lists */
@@ -97,7 +98,7 @@ ul li {
 /* Images */
 
 figure {
-  margin: 0;
+  margin: 1em 0 1em 0;
 }
 
 article img {
@@ -150,6 +151,10 @@ img.bordered,
   padding-bottom: 20px;
 }
 
+.pad1r {
+  padding-right: 10px;
+}
+
 .mb1 {
   margin-bottom: 10px;
 }
@@ -176,8 +181,6 @@ img.bordered,
 .fr { float: right; }
 .lowercase { text-transform: lowercase; }
 .center { text-align: center; }
-.dot { border-radius: 50%; }
-.white-on-white { border: 1px solid #ddd; }
 
 .large { font-size: 1.2rem; }
 .small, small, .footnotes { font-size:  0.9rem; }
@@ -187,23 +190,27 @@ img.bordered,
 
 /* Code */
 
+/*
+  Note: Jekyll Liquid `{% highlight ruby %} {% endhighlight %}` code blocks produce
+  different markup than standard Markdown code blocks (```ruby ``` or plain indentation)
+  See: https://github.com/jekyll/jekyll/issues/6446
+*/
+
 pre {
   padding: 10px 30px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #eee;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 code { /* Inline code */
-  font-family: San Francisco Mono, Menlo, Monaco, monospace;
+  font-family: SF Mono, Inconsolata, Source Code Pro, Menlo, Monaco, monospace;
   font-size: .9rem;
 
   /* Break inline code */
   white-space: pre-wrap;
   word-wrap: break-word;
-  background-color: #eee;
 }
 
 pre code { /* Code blocks */
@@ -217,10 +224,11 @@ pre code { /* Code blocks */
 /* Syntax Higlighting */
 
 /*
-from https://github.com/mojombo/tpw/blob/master/css/syntax.css
-under MIT License
-*/
+  from https://github.com/mojombo/tpw/blob/master/css/syntax.css
+  under MIT License
 
+  See also: https://jekyllrb.com/docs/templates/
+*/
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
