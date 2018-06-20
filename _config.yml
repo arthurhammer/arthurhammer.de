@@ -38,9 +38,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
-# -- Plugins --
-
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag

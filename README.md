@@ -14,7 +14,7 @@ Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.i
 
 **Run a local server**:
 
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental
 
 **Build site**:
 
