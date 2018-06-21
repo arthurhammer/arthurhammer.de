@@ -3,13 +3,13 @@ title: Last Light
 description: An iOS Workflow to tell me when it's going to be dark outside
 ---
 
-{% include figure.html src="/assets/2017-05-03-trail.jpg" alt="Dark Trails" %}
+{% include figure.html src="/assets/2017-05-23-trail.jpg" alt="Dark Trails" %}
 
 What do you do when you look for a niche app with a specific set of requirements but can’t find one that you like? You make a [Workflow](https://workflow.is).
 
 [This workflow][workflow] does one thing: It tells you when it’s going to be dark outside today. By dark I don’t mean sundown, I mean dark dark or [Civil Dusk](https://en.wikipedia.org/wiki/Dusk#Technical_definitions). I wanted this for when I plan my evening activities. Mostly it’s about finding a good running or walking route for the amount of daylight left.
 
-{% include figure.html src="/assets/2017-05-03-screenshot.png" alt="Screenshot" %}
+{% include figure.html src="/assets/2017-05-23-screenshot.png" alt="Screenshot" %}
 
 The apps I tried missed the mark in several ways:
 

@@ -5,7 +5,7 @@ description: A browser extension that adds a table of contents to GitHub readmes
 
 {% include figure.html src="/assets/2015-11-27-screenshot.png" alt="screenshot" %}
 
-A [readme](https://en.wikipedia.org/wiki/README) is the first thing you see when you open a repository on [GitHub](https://github.com). It tells you what a project is about, how to install and build it. For bigger projects, readmes can grow quite big and it becomes hard quickly finding what you are looking for. I often end up scrolling all over the place.
+A [readme](https://en.wikipedia.org/wiki/README) is the first thing you see when you open a repository on [GitHub](https://github.com). It tells you what a project is about, how to install and build it. For bigger projects, readmes can grow quite big and it becomes hard to quickly find what you are looking for. I often end up scrolling all over the place.
 
 Some project maintainers manually add a table of contents to their readmes but most don't. And it's not just readmes where I'd like to have a summary on GitHub. There are [wikis](https://help.github.com/articles/about-github-wikis/), [gists](https://help.github.com/articles/about-gists/) and basically any other [structured text file](https://github.com/github/markup). That's a lot of work to be doing manually.
 
