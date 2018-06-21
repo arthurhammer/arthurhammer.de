@@ -1,5 +1,5 @@
 <figure>
-  <a href="{{ include.src }}">
+  <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
     <img src="{{ include.src }}" alt="{{ include.alt }}"/>
   </a>
   <figcaption>{{ include.caption }}</figcaption>

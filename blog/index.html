@@ -6,10 +6,6 @@ layout: default
   <article class="mb20">
     <h1><a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title }}</a></h1>
 
-    {% if post.description %}
-    <p><em>{{ post.description }}</em></p>
-    {% endif %}
-
     {{ post.content }}
 
     {% if post.date %}
