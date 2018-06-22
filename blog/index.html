@@ -15,11 +15,13 @@ layout: default
 {% endfor %}
 
 <nav>
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" rel="prev" class="fl">Previous</a>
-  {% endif %}
+  <ul class="list-unstyled list-inline">
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path }}" rel="prev" class="fl">Previous</a></li>
+    {% endif %}
 
-  {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" rel="next" class="fr">Next</a>
-  {% endif %}
+    {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path }}" rel="next">Next</a></li>
+    {% endif %}
+  </ul>
 </nav>
