@@ -24,9 +24,11 @@ include:
   - _pages
 exclude:
   - _private
-  - README.MD,
+  - README.md
   - LICENSE
   - vendor
+  - Gemfile
+  - Gemfile.lock
 
 defaults:
   -
