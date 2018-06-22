@@ -7,3 +7,5 @@ permalink: /about/
 Hi, I'm Arthur. Sometimes I write on [my blog]({{ "/blog/" | relative_url }}), usually about small hacks that make my life a bit easier. Some of my projects are on [GitHub](https://github.com/{{ site.author.github }}).
 
 You can [contact me via email](mailto:{{ site.author.email }}).
+
+[This site is open source]({{ site.baseurl }}{% post_url 2018-05-28-this-site-is-open-source %}).
