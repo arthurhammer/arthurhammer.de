@@ -6,7 +6,7 @@ A simple static site powered by [Jekyll](https://jekyllrb.com).
 
 ## Build
 
-Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.io) is installed.
+Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.io) is installed. Jekyll itself is installed as a project dependency.
 
 **Install dependencies**:
 
@@ -14,12 +14,11 @@ Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.i
 
 **Run a local server**:
 
-    bundle exec jekyll serve --incremental
+    bundle exec jekyll serve --livereload
 
 **Build site**:
 
     bundle exec jekyll build
-
 
 ## License
 
