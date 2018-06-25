@@ -94,13 +94,14 @@ ul li {
   margin-right: 10px;
 }
 
-/* Images */
+/* Images, videos */
 
 figure {
   margin: 1em 0 1em 0;
 }
 
-article img {
+article img,
+video {
   display: block;
   max-width: 100%;
   max-height: 800px;
@@ -108,19 +109,14 @@ article img {
 }
 
 figcaption,
-img + em {
+img + em,
+video + em {
   display: block;
   padding-top: 10px;
   text-align: center;
   color: gray;
   font-size: 0.9rem;
   font-style: normal;
-}
-
-/* Hack for _includes/figure.html. */
-img.bordered,
-.bordered img {
-  border: 1px solid #ddd;
 }
 
 /* Spacing */
