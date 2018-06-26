@@ -3,7 +3,12 @@ title: Quiet Links
 description: A CSS stylesheet to mute distracting links for focused reading.
 ---
 
-{% include figure.html src="https://imgs.xkcd.com/comics/the_problem_with_wikipedia.png" href="https://xkcd.com/214/" alt="XKCD 214" caption="<a href='https://xkcd.com/license.html'>Source: XKCD</a>" %}
+{% include figure.html
+  src="https://imgs.xkcd.com/comics/the_problem_with_wikipedia.png"
+  href="https://xkcd.com/214/"
+  alt="XKCD 214"
+  caption="<a href='https://xkcd.com/license.html'>Source: XKCD</a>"
+%}
 
 [Quiet Links](https://github.com/arthurhammer/userscripts/tree/master/QuietLinks) is my answer to the [Wikipedia Rabbit Hole](https://xkcd.com/214/). It is a stylesheet to quiet down links on pages to help you focus on reading.
 

@@ -1,5 +1,6 @@
 ---
 title: Counting Mountain Summits with Strava
+description: Figuring out how often I've climbed this one mountain.
 ---
 
 {% include figure.html src="/assets/2018-06-19-main.jpg" caption="Finding summits" alt="The Brocken summit" %}

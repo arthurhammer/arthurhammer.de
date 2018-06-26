@@ -7,9 +7,9 @@ I don't use a lot of shortcuts. I know a core set I for my most used application
 
 - There are **too many** to remember.
 - They are **not unique**. Collisions happen resulting in nothing or possibly the wrong thing.
-- They are **abstract** and do not describe the action they represent.
+- They are **abstract** and do not describe the actions they represent.
 
-The last point is key. I associate actions with names, not with symbols. Names can be remembered, names can be searched. And the best thing is actions with names can be triggered with a search.
+The last point is key. I associate actions with names, not with symbols. Names can be remembered and searched. And the best thing is actions with names can be triggered with a search.
 
 ## Searching the Menu Bar
 
@@ -27,4 +27,4 @@ A great alternative is [Alfred](https://www.alfredapp.com/) with the [Menu Searc
 
 ## Actions
 
-This is the preferred way of computing for me. Thinking in terms of actions and names. Just type what you want to do and do it. The barriers to entry are low, the intentions are clear, the results predictable and repeatable. Granted, shortcuts are a lot faster when mastered. But the investment is high and results are volatile, especially when you switch between a lot of applications.
+This is the preferred way of computing for me. Thinking in terms of actions and names. Just type what you want to do and do it. The barriers to entry are low, the intentions are clear and the results predictable. Granted, shortcuts are a lot faster when mastered. But the investment is high and results volatile when you switch between a lot of applications.
