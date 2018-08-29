@@ -1,11 +1,11 @@
 # Site
-title: ahammer.me
+title: arthurhammer.de
 description: Arthur Hammer
 author:
   name: Arthur Hammer
-  email: arthur@ahammer.me
+  email: hi@arthurhammer.de
   github:  arthurhammer
-repo: https://github.com/arthurhammer/ahammer.me
+repo: https://github.com/arthurhammer/arthurhammer.de
 
 # jekyll-seo-tag
 social:
@@ -15,7 +15,7 @@ social:
 google_site_verification: knvANMeDeDlyFLBmV6H8_CZyVgm0ODw1ZEJEmYh2JQM
 
 # Build
-url: "http://ahammer.me"
+url: "https://arthurhammer.de"
 permalink: /:year/:month/:title/
 host: 0.0.0.0
 

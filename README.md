@@ -1,6 +1,6 @@
-# [ahammer.me](http://ahammer.me)
+# [arthurhammer.de](https://arthurhammer.de)
 
-My personal website and blog, [ahammer.me](http://ahammer.me).
+My personal website and blog, [arthurhammer.de](https://arthurhammer.de).
 
 A simple static site powered by [Jekyll](https://jekyllrb.com).
 
