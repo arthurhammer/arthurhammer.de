@@ -27,4 +27,4 @@ A great alternative is [Alfred](https://www.alfredapp.com/) with the [Menu Searc
 
 ## Actions
 
-This is the preferred way of computing for me. Thinking in terms of actions and names. Just type what you want to do and do it. The barriers to entry are low, the intentions are clear and the results predictable. Granted, shortcuts are a lot faster when mastered. But the investment is high and results volatile when you switch between a lot of applications.
+This is the preferred way of computing for me. [Thinking in terms of actions and names](/2017/01/alfred-help/). Just type what you want to do and do it. The barriers to entry are low, the intentions are clear and the results predictable. Granted, shortcuts are a lot faster when mastered. But the investment is high and results volatile when you switch between a lot of applications.
