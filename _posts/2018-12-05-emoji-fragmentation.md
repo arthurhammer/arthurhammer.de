@@ -16,7 +16,7 @@ I've been known to consult the excellent [Emojipedia](https://emojipedia.org) be
 
 {% include figure.html src="/assets/2018-12-05-screenshot.jpg" caption="The shortcut in action for the monocle emoji. Face expressions differ significantly." alt="Screenshot" %}
 
-The result is [this shortcut](https://www.icloud.com/shortcuts/d5213325b31848cf92617db875372240) for the iOS Shortcuts app. It expects a single emoji character on the clipboard and shows you how it will look across platforms. You can trigger the shortcut from the share sheet, Notification Center or Siri. That way, you don't have to leave your messaging app to compare emojis.
+The result is [this shortcut](https://www.icloud.com/shortcuts/d5213325b31848cf92617db875372240) for the iOS [Shortcuts app](https://support.apple.com/guide/shortcuts/welcome/ios). It expects a single emoji character on the clipboard and shows you how it will look across platforms. You can trigger the shortcut from the share sheet, Notification Center or Siri. That way, you don't have to leave your messaging app to compare emojis.
 
 ## Limitations
 
