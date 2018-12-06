@@ -5,7 +5,7 @@ body {
 
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, arial, sans-serif;
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.5;
 
   color: #333;
   -webkit-font-smoothing: antialiased;
@@ -39,6 +39,11 @@ h4,
 h5,
 h6 {
   font-size: 1.1rem;
+}
+
+.site-title {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 blockquote {
@@ -166,6 +171,10 @@ video + em {
   margin-bottom: 200px;
 }
 
+.mt1 {
+  margin-top: 10px;
+}
+
 /* Util */
 
 .quiet { color: gray; }
@@ -180,6 +189,8 @@ video + em {
 .large { font-size: 1.2rem; }
 .small, small, .footnotes { font-size:  0.9rem; }
 .tiny  { font-size:  .8rem; }
+
+.narrow { line-height: 1.3em; }
 
 .footnotes { border-top: 1px solid #ccc; }
 
