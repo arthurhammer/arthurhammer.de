@@ -44,7 +44,7 @@ main()
 
 ## Results
 
-After about two minutes on my machine, the "sch" version spit out the following words. Some of the words are hilarious and some aren't even real words. The only real candidate on the list is **Braunschweig**, a city in Germany. Riddle solved!
+After about two minutes on my machine, the "sch" version spit out the following words. Some of the words are hilarious but most aren't even real words. The only real candidate on the list is **Braunschweig**, a city in Germany. Riddle solved!
 
     Arschweinbug
     Barschwungei

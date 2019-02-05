@@ -7,7 +7,7 @@ description: Spotting trends in 17k photos.
 
 ---
 
-My iCloud Photo Library where I keep the majority of my photos keeps growing steadily. Currently, there are a total of **17016 photos** in there.[^1] I wanted to get an overview of my photo habits by charting how and when I take photos.
+My iCloud Photo Library where I keep the majority of my photos keeps growing steadily. Currently, there are a total of **18868 photos** in there.[^1] I wanted to get an overview of my photo habits by charting how and when I take photos.
 
 ## Photos by Year and Month
 
@@ -17,7 +17,7 @@ Let's start with the number of photos I took each year. It is displayed in the c
 
 I see a few reasons for this: Obviously, I just take more photos in general. More specifically, I stopped filtering myself. I now take a lot of pictures of everday mundane things for archival purposes, like a visual diary. Ten years down the road, I want to get a good feel of how my life is today. And finally, I started asking friends and family to share their photos with me more regurlarly.
 
-The bottom right chart shows photos by month. December is the clear winner and reflects the collected Christmas and New Year's Eve photos. Apparently I don't take many photos in the cold months of January and February.
+The bottom right chart shows photos by month. December is the clear winner and reflects the collected Christmas and New Year's Eve photos from our family gatherings. Apparently I don't take many photos in the cold months of January and February.
 
 The chart on the bottom left combines both charts and gives photos per year and month. Christmas time each year is noticeable again (and increasing each year) but I also have yearly photos in April from my birthday.
 
@@ -31,17 +31,19 @@ The chart on the top shows at which time during the day I take most photos. It s
 
 From the bottom left chart we can see that at least on Fridays and Saturdays, I do take some late night and early morning photos.
 
-## Every Photo I've Ever Taken
+## Every Photo I Have Ever Taken
 
 {% include figure.html src="/assets/2018-12-08-dots.jpg" caption="Click for full image." alt="" %}
 
-Here is one dot for every photo in my library. Looking at this feels weirdly intimate. These dots represent a lot of moments.
+Here is one dot for every photo in my library. Looking at this feels weirdly intimate. These aren't even photos, just dots but they represent a lot of individual moments in my life. It goes to show how much meaning there is in metadata alone.
 
-Most noticeably, again, is the increase in photo density over time.
+In the interactive notebook you can even zoom into the chart and see when I took photos on individual days. there
+
+This chart again visualizes the increase in photo density over time.
 
 ## Data
 
-The data is exported from my iCloud Photo Library on my iPhone. I used the [Pythonista iOS app](http://omz-software.com/pythonista/) and the Photos API to export a simple list of timestamps for each photo. You can [find the script and dataset here](https://gist.github.com/arthurhammer/a861fc9a91669397a5cc70fc9d8ebedd).
+The data is exported from my iCloud Photo Library on my iPhone. I used the [Pythonista iOS app](http://omz-software.com/pythonista/) and the Photos API to export some metadata for each photo. You can [find the script and dataset here](https://gist.github.com/arthurhammer/a861fc9a91669397a5cc70fc9d8ebedd).
 
 Charts were created with the excellent [Vega-Lite library](http://vega.github.io/vega-lite/).
 
@@ -49,7 +51,7 @@ Charts were created with the excellent [Vega-Lite library](http://vega.github.io
 
 This was a fun way to make some temporal sense of my photo library.
 
-In this post, I only considered photos by creation date. In the future, I want to include and visualize additional metadata for each photo such as:
+In this post, I only considered photos by creation date. In the future, I could include and visualize additional metadata for each photo such as:
 
 - Chart photos by types (photo, video) and subtypes (live photo, slow motion video etc.), by camera model, by whether the photo is favorited etc.
 - Filter charts by photo type, subtype, camera model, favorites etc.
@@ -57,6 +59,6 @@ In this post, I only considered photos by creation date. In the future, I want t
 
 Additionally, I could add some crossfilters. For example, see how weekday and time of day charts change for each year. There are a lot of dimensions for simple data like this.
 
-Photo libraries used to be nothing more than sequences of photos. But with evergrowing photos libraries spanning decades and potentially reaching hundreds of thousands of photos, it will become increasingly harder to keep an overview. Apple, Google and others have noticed this and are heavily ramping up their Machine Learning and other automated photo analysis approaches (face and object recognition, smart photo clustering, memory reminders, filtering photos across multiple dimensions etc.). I'm excited where this is going and how we'll interact with our photo libraries in the future.
+Photo libraries used to be nothing more than sequences of photos. But with evergrowing libraries spanning decades and potentially reaching hundreds of thousands of photos, it will become increasingly harder to keep an overview. Apple, Google and others have noticed this and are heavily ramping up their Machine Learning and other automated photo analysis approaches (face and object recognition, smart photo clustering, memory reminders, filtering photos across multiple dimensions etc.). I'm excited where this is going and how we'll interact with our photo libraries in the future.
 
 [^1]: Not all of the photos in my library were taken by me and not all photos I've ever taken are in there. And for simplictiy, I used the term "photo" to denote any type of item in my library be it photo, video, GIF, audio etc.
