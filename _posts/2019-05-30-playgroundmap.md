@@ -3,7 +3,7 @@ title: Playground Map
 description: Designing a map of playgrounds.
 ---
 
-My girlfriend and her inner child like visiting playgrounds. As a fun little gift, I wanted to make her a custom designed print map of ~~all~~ playgrounds in our city where she can check off which ones she’s visited already.
+My girlfriend and her inner child like visiting playgrounds. As a fun little gift, I wanted to make her a custom print map of playgrounds in our city where she can check off which ones she’s visited already.
 
 {% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="" alt="Playground map of Braunschweig" %}
 
