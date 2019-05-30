@@ -30,7 +30,7 @@ This is query I used for getting the public playgrounds in Braunschweig:
 
 {% include figure.html src="/assets/2019-05-30-overpass-turbo.jpg" caption="All playgrounds extracted from OpenStreetMap." alt="All playgrounds extracted from OpenStreetMap." %}
 
-The result contained 360 playgrounds, too many for the map I envisioned. The printed map would get too crowdy and navigating to and marking off visited ones would be difficult. From looking at satellite imagery, I found that many locations marked as playgrounds were simple sandpits. I decided to manually cross-correlate and filter with satellite imagery and with a cute children’s map provided by the local government.
+The result contained 360 playgrounds, too many for the map I envisioned. The printed map would get too crowdy and navigating to and marking off visited ones would be difficult. From looking at satellite imagery, I found that many locations marked as playgrounds were simple sandpits. I decided to manually cross-correlate and filter them with satellite imagery. Additionally, I consulted a cute children’s map provided by the local government to remove playgrounds tagged in OpenStreetMap but not in the local map.
 
 Going through every single playground in the original set was quite time-consuming and boring. I thought about automating the decision process—like only including playgrounds with a minimum size or an assigned name—but in the end the manual process guaranteed the best results.
 
@@ -54,7 +54,7 @@ You can try out an interactive version of the map [here](https://api.mapbox.com/
 
 ## Printing
 
-Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons. One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. In the end, I settled on a DIN A4 printout folded into a little flyer.
+Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. In the end, I settled on a DIN A4 printout folded into a little flyer.
 
 I’m quite pleased with the result.
 
