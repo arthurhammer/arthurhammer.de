@@ -54,7 +54,7 @@ You can try out an interactive version of the map [here](https://api.mapbox.com/
 
 ## Printing
 
-Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. In the end, I settled on a DIN A4 printout folded into a little flyer.
+Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. In the end, I settled for a DIN A4 printout folded into a little flyer.
 
 I’m quite pleased with the result.
 
