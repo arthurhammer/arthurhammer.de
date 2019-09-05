@@ -3,16 +3,16 @@ title: Playground Map
 description: Designing a map of playgrounds.
 ---
 
-My girlfriend and her inner child like visiting playgrounds. As a fun little gift, I wanted to make her a custom print map of playgrounds in our city where she can check off which ones she’s visited already.
+My girlfriend's inner child likes visiting playgrounds. As a little gift to her, I wanted to design a print map of playgrounds in our city. She can use the map to find new playgrounds and check off which ones she’s visited already.
 
-{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="" alt="Playground map of Braunschweig" %}
+{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="The result: a 20 x 30 cm custom print map of playgrounds in Braunschweig." alt="Playground map of Braunschweig" %}
 
 
 ## Getting Data
 
-The first step was to get the data for all playgrounds in the city. [OpenStreetMap](https://openstreetmap.org) has many of them mapped. To extract the data as JSON, we can use the powerful tool [Overpass Turbo](https://overpass-turbo.eu/). It takes a little getting used to their query syntax but once you do you‘re ready to slice off any data you want.
+The first step for this project was to get a listing of all playgrounds in the city. The local tourist info gives out children's maps showing public playgrounds amongst other things. This was a good starting point but I needed the data in a machine-readable format for display on a digital map. I checked [OpenStreetMap](https://openstreetmap.org) and its playground coverage in the area looked quite good.
 
-This is query I used for getting the public playgrounds in Braunschweig:
+To extract the map data from OpenStreetMap, I used [Overpass Turbo](https://overpass-turbo.eu/). It allows you to specify queries for the data and output format you like, in this case JSON. This is the Overpass Turbo query I used for public playgrounds in Braunschweig, Germany:
 
     [out:json][timeout:25];
     {% raw %}{{geocodeArea:Braunschweig}}->.searchArea;{% endraw %}
@@ -26,22 +26,24 @@ This is query I used for getting the public playgrounds in Braunschweig:
     out skel qt;
 
 
-### Validating
+### Validating Data
 
-{% include figure.html src="/assets/2019-05-30-overpass-turbo.jpg" caption="All playgrounds extracted from OpenStreetMap." alt="All playgrounds extracted from OpenStreetMap." %}
+{% include figure.html src="/assets/2019-05-30-overpass-turbo.jpg" caption="All 360 playgrounds extracted from OpenStreetMap with Overpass Turbo." alt="All 360 playgrounds extracted from OpenStreetMap with Overpass Turbo." %}
 
-The result contained 360 playgrounds, too many for the map I envisioned. The printed map would get too crowdy and navigating to and marking off visited ones would be difficult. From looking at satellite imagery, I found that many locations marked as playgrounds were simple sandpits. I decided to manually cross-correlate and filter them with satellite imagery. Additionally, I consulted a cute children’s map provided by the local government to remove playgrounds tagged in OpenStreetMap but not in the local map.
+The result contained 360 playgrounds, too many for the map I envisioned. The printed map would be too crowded and navigating to and marking off visited locations would be difficult. I decided to hand-filter playgrounds by a few criteria.
 
-Going through every single playground in the original set was quite time-consuming and boring. I thought about automating the decision process—like only including playgrounds with a minimum size or an assigned name—but in the end the manual process guaranteed the best results.
+From looking at satellite imagery, I found that many locations marked as playgrounds were simple sandpits. I excluded many of these. Additionally, I removed playgrounds tagged in OpenStreetMap that were not present in the children’s map provided by the local government.
 
-The result were 161 playgrounds. Since I'd be showing only the districts around the city center, the final map would contain even fewer than that.
+Going through every single playground in the original set was quite time-consuming. I thought about automating the decision process—like only including playgrounds with a minimum size or an assigned name—but in the end the manual process guaranteed the best results.
+
+That left me with 161 playgrounds. Since I'd be showing only the districts around the city center, the final map would contain even fewer than that. Great!
 
 
 ## Designing the Map
 
-Now for the fun part, designing the map.
+Now for the fun part: designing the map.
 
-{% include figure.html src="/assets/2019-05-30-mapstyle.jpg" caption="A map style for playgrounds." alt="A map style for playgrounds." %}
+{% include figure.html src="/assets/2019-05-30-mapstyle.jpg" caption="A custom map style for playgrounds." alt="A map style for playgrounds." %}
 
 In the spirit of playing and playgrounds, I wanted the map to be lighthearted and fun, taking cues from children's maps. The street network should appear muted but other landmark features like parks and lakes I wanted to be bold. This lets the playground locations stand out but still allows the map to be used for navigation. Finally, I highlighted the city district names to give an additional navigational context.
 
@@ -54,8 +56,8 @@ You can try out an interactive version of the map [here](https://api.mapbox.com/
 
 ## Printing
 
-Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. In the end, I settled for a DIN A4 printout folded into a little flyer.
+Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. I don't want that. In the end, I settled for a DIN A4 printout folded into a little flyer.
 
-I’m quite pleased with the result.
+I’m quite pleased with the result and my girlfriend too!
 
 {% include figure.html src="/assets/2019-05-30-playgroundmap2.jpg" caption="" alt="Playground map of Braunschweig" %}
