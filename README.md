@@ -22,5 +22,7 @@ Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.i
 
 ## License
 
+Except otherwise noted:
+
 - Content: [Creative Commons, BY](http://creativecommons.org/licenses/by/4.0/)
 - Code: [MIT](http://opensource.org/licenses/mit-license.php)

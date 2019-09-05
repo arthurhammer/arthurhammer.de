@@ -10,10 +10,10 @@ layout: default
   <ul class="list-unstyled spacious">
   {% for post in site.posts %}
     <li class="mb2">
-      <a href="{{ post.url | relative_url }}" class="pad1r">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}" class="title pad1r">{{ post.title }}</a>
       <div class="quiet small narrow" >
         <time datetime="{{ post.date | date_to_xmlschema }}" class="quiet">{{ post.date | date: "%B %Y" }}</time>
-        {% if post.description %}·{% endif %} {{ post.description }}
+        {% if post.description %} | {% endif %} {{ post.description }}
       </div>
     </li>
   {% endfor %}
