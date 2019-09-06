@@ -1,7 +1,9 @@
 <figure>
-  <video autoplay loop muted playsinline>
-    <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
-    Your browser doesn't support playing this video.
-  </video>
+  <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
+    <video autoplay loop muted playsinline>
+      <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
+      Your browser doesn't support playing this video.
+    </video>
+  </a>
   <figcaption>{{ include.caption }}</figcaption>
 </figure>
