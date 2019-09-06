@@ -39,7 +39,7 @@ I had a prototype ready in a day. It was good enough for me but I promised mysel
 
 **Lesson**: There's an enormous gap between the prototype that you use yourself to the product that you want other people to use.
 
-There is an overwhelming amount of details to make a good app. Even after I hade the core functionality and UI implemented, there’s a never-ending list of capabilities and APIs to support. Rotation, action extensions, home screen actions, NSUserActivity, 3D Touch, Haptic Feedback, localizations, accessibility, custom animations and a ton more.
+A good app is made of an overwhelming amount of details that rarely anybody sees. Even after I hade the core functionality and UI implemented, there’s a never-ending list of capabilities and APIs to support. Rotation, action extensions, home screen actions, NSUserActivity, 3D Touch, Haptic Feedback, localizations, accessibility, custom animations and a ton more.
 
 Analysis paralysis overcame me. Apple adds capabilities and APIs to iOS every single year at an incredible pace, how was I going to keep up and support everything? How do other indie developers who manage to ship non-trivial apps do it? I gained a lot of respect for them.
 
@@ -64,7 +64,7 @@ Especially the last one was a tough decision as you don't want some users to be 
 
 Three things cost most of the time: transition animations, the time slider in the video editor and managing albums in the Photo Library.
 
-First, the transition from a Photo Library album to the video editor and back. This was my first time implementing a [custom view controller transition](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html) and it's far from trivial. Initially, I wanted to make the dismissal interactive similar to the Photos app where you slide the video away with your finger. Taking the previous lesson to heart, I cut this short and decided to make the animation non-interactive. Still, I ended up learning a ton.
+First, the transition from a photo album to the video editor and back. This was my first time implementing a [custom view controller transition](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html) and it's far from trivial. Initially, I wanted to make the dismissal interactive similar to the Photos app where you slide the video away with your finger. Taking the previous lesson to heart, I cut this short and decided to make the animation non-interactive. Still, I ended up learning a ton.
 
 Second, the slider to move through the video is a fully custom component. It has a fixed value indicator and a moving track. This makes picking out the right frame easier or so I tell myself. Looking back at it, the standard slider might have sufficed.
 
