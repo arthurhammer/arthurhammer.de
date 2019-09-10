@@ -5,7 +5,7 @@ description: I published my first iOS app on the App Store, Frame Grabber.
 
 {% include gifv.html src="/assets/2018-10-05-screenshot.mp4" caption="Capturing the best moment as Eliud Kipchoge sets the marathon world record in Berlin 2018." alt="Frame Grabber in action." %}
 
-A while ago I published my first app on the App Store, [Frame Grabber](https://itunes.apple.com/de/app/frame-grabber/id1434703541?l=en&mt=8). It's a simple iOS app that lets you export individual frames of a video as still images. Pick a video in your Photo Library, pick a frame, hit share, done.
+A while ago I published my first app on the App Store, [Frame Grabber](https://apps.apple.com/app/frame-grabber/id1434703541). It's a simple iOS app that lets you export individual frames of a video as still images. Pick a video in your Photo Library, pick a frame, hit share, done.
 
 Here are my reflections on creating it.
 
@@ -97,6 +97,6 @@ What's left:
 - Probably not: Ability to export from Live Photos and GIFs.
 - Unlikely: Support for iPad.
 
-Feedback so far has been positive. Try Frame Grabber [on the App Store](https://itunes.apple.com/de/app/frame-grabber/id1434703541?l=en&mt=8). It's also [open-source](https://github.com/arthurhammer/FrameGrabber).
+Feedback so far has been positive. Try Frame Grabber [on the App Store](https://apps.apple.com/app/frame-grabber/id1434703541). It's also [open-source](https://github.com/arthurhammer/FrameGrabber).
 
-{% include figure.html src="/assets/2018-10-05-banner.png" href="https://itunes.apple.com/de/app/frame-grabber/id1434703541?l=en&mt=8" alt="Download on the App Store." %}
+{% include figure.html src="/assets/2018-10-05-banner.png" href="https://apps.apple.com/app/frame-grabber/id1434703541" alt="Download on the App Store." %}
