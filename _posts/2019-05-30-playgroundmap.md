@@ -3,10 +3,11 @@ title: Playground Map
 description: Designing a map of playgrounds.
 ---
 
+{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="A 20 × 30 cm custom designed print map of playgrounds in Braunschweig, Germany." alt="Playground map of Braunschweig, Germany." %}
+
 My girlfriend's inner child likes visiting playgrounds. As a little gift to her, I wanted to design a print map of playgrounds in our city. She can use the map to find new playgrounds and check off which ones she’s visited already.
 
-{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="The result: a 20 x 30 cm custom print map of playgrounds in Braunschweig." alt="Playground map of Braunschweig" %}
-
+Making the map consisted of two main steps: getting the data and designing the map.
 
 ## Getting Data
 
@@ -26,7 +27,7 @@ To extract the map data from OpenStreetMap, I used [Overpass Turbo](https://over
     out skel qt;
 
 
-### Validating Data
+## Validating Data
 
 {% include figure.html src="/assets/2019-05-30-overpass-turbo.jpg" caption="All 360 playgrounds extracted from OpenStreetMap with Overpass Turbo." alt="All 360 playgrounds extracted from OpenStreetMap with Overpass Turbo." %}
 
@@ -41,23 +42,23 @@ That left me with 161 playgrounds. Since I'd be showing only the districts aroun
 
 ## Designing the Map
 
-Now for the fun part: designing the map.
+Now for the fun part, designing the map.
 
 {% include figure.html src="/assets/2019-05-30-mapstyle.jpg" caption="A custom map style for playgrounds." alt="A map style for playgrounds." %}
 
 In the spirit of playing and playgrounds, I wanted the map to be lighthearted and fun, taking cues from children's maps. The street network should appear muted but other landmark features like parks and lakes I wanted to be bold. This lets the playground locations stand out but still allows the map to be used for navigation. Finally, I highlighted the city district names to give an additional navigational context.
 
-To style the map, I used [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). I started with their new [Minimo style](https://blog.mapbox.com/minimo-data-visualization-map-f4ef21687d29) which proved a good base for my map.
+To style the map, I used [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). It's a powerful tool that gives you full control on how you style certain map elements. I started with their new [Minimo style](https://blog.mapbox.com/minimo-data-visualization-map-f4ef21687d29) which provided a good basis for my map design.
 
-{% include figure.html src="/assets/2019-05-30-mapstyle2.jpg" caption="The Minimo base style and the result." alt="The base Minimo style and the result." %}
+{% include figure.html src="/assets/2019-05-30-mapstyle2.jpg" caption="The Minimo base style and the final design." alt="The Minimo base style and the final design." %}
 
 You can try out an interactive version of the map [here](https://api.mapbox.com/styles/v1/vzqdccrcq/cjw9eyf3j02r01cpdxnu8o452.html?fresh=true&title=true&access_token=pk.eyJ1IjoidnpxZGNjcmNxIiwiYSI6ImNqMGF3anphaTAyMDQycXJyZXRpZDM4YjUifQ.LLx1Mn3DOp26nxtTeSlvRg).
 
 
 ## Printing
 
-Initially, I planned to make a high-quality print and frame the map but during the process I decided against it for two reasons: One, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Two, frames come with an obligation to hang them up the wall. I don't want that. In the end, I settled for a DIN A4 printout folded into a little flyer.
+Initially, I planned to make a high-quality print and frame the map. During the process I decided against it for two reasons: First, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Second, frames come with an obligation to hang them up the wall. I don't like that. In the end, I settled for a DIN A4 printout folded into a little flyer.
 
-I’m quite pleased with the result and my girlfriend too!
+I’m quite pleased with the result and my girlfriend is too.
 
 {% include figure.html src="/assets/2019-05-30-playgroundmap2.jpg" caption="" alt="Playground map of Braunschweig" %}

@@ -1,6 +1,6 @@
 ---
 title: Man Page for Alfred
-description: A workflow that documents your Alfred workflows.
+description: A workflow that documents your workflows.
 ---
 
 ***Update June 2019**: This workflow was built for Alfred 3. Alfred 4 now comes with a [native feature very similar to this](https://www.alfredapp.com/whats-new/).*

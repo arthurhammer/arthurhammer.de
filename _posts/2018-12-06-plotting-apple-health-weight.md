@@ -1,6 +1,6 @@
 ---
 title: Plotting Weight on iOS
-description: Plotting Apple Health weight samples with Shortcuts and Pythonista.
+description: Plotting Apple Health samples with Shortcuts and Pythonista.
 ---
 
 {% include figure.html src="/assets/2018-12-06-weight.png" caption="Generated chart with Shortcuts and Pythonista." alt="Generated weight chart" %}
