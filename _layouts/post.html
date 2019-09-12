@@ -5,11 +5,18 @@ layout: default
 <article>
   <header>
     <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <div class="quiet">
+      {{ page.description }}
+    </div>
+    {% endif %}
   </header>
 
   {{ content }}
 
   {% if page.date %}
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="quiet small">{{ page.date | date: "%B %Y" }}</time>
+  <footer>
+    <time class="quiet small" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %Y" }}</time>
+  </footer>
   {% endif %}
 </article>

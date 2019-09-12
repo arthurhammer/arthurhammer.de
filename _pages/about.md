@@ -2,7 +2,7 @@
 permalink: /about/
 ---
 
-{% include figure.html src="/assets/about.jpg" caption="Trail joggling." alt="Me" %}
+{% include figure.html src="/assets/about.jpg" alt="Me" %}
 
 Hi, I'm Arthur.
 

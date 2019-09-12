@@ -35,12 +35,12 @@ body {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6,
-.site-title, nav, figcaption, footnote, time {
+.site-title, nav, header, footer, figcaption, footnote, time {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 h1 {
@@ -74,7 +74,7 @@ h1+ol, h2+ol, h3+ol, h4+ol, h5+ol, h6+ol {
 }
 
 /* And here. */
-header h1 {
+header {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -228,10 +228,9 @@ hr {
 .uppercase { text-transform: uppercase; }
 
 .tiny  { font-size:  .8rem; }
-.small, small, .footnotes { font-size:  0.9rem; }
+.small, small, .footnotes { font-size:  0.95rem; }
 .large { font-size: 1.2rem; }
 .footnotes { border-top: 1px solid #ccc; }
-.narrow { line-height: 1.4em; }
 
 /* Code */
 

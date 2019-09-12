@@ -2,20 +2,28 @@
 layout: default
 ---
 
-<style>
-  .spacious { line-height: 1.8em; }
-</style>
+<div class="mb6">
+  Hi, I’m Arthur. I’m a Computer Science student, iOS developer, trail and ultra marathon runner, juggler and all around fiddler.
+</div>
 
 <nav>
-  <ul class="list-unstyled spacious">
   {% for post in site.posts %}
+    {% assign year = post.date | date: "%Y" %}
+
+    {% if year != lastYear %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h2>{{ year }}</h2>
+      <ul class="list-unstyled">
+      {% assign lastYear = year %}
+    {% endif %}
+
     <li class="mb2">
       <a href="{{ post.url | relative_url }}" class="">{{ post.title }}</a>
-      <div class="quiet small narrow" >
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="quiet">{{ post.date | date: "%b %Y" }}</time>
-        {% if post.description %} | {% endif %} {{ post.description }}
-      </div>
+      {% if post.description %}
+      <div class="quiet small" >{{ post.description }}</div>
+      {% endif %}
     </li>
+
+    {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
-  </ul>
 </nav>

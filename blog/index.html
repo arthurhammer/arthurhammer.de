@@ -5,15 +5,20 @@ layout: default
 {% for post in paginator.posts %}
   <article class="mb10">
     <header>
-      <h1>
-        <a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title }}</a>
-      </h1>
+      <h1><a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title }}</a></h1>
+      {% if post.description %}
+      <div class="quiet">
+        {{ post.description }}
+      </div>
+      {% endif %}
     </header>
 
     {{ post.content }}
 
     {% if post.date %}
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="quiet small">{{ post.date | date: "%B %Y" }}</time>
+    <footer>
+      <time class="quiet small" datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+    </footer>
     {% endif %}
   </article>
 {% endfor %}
