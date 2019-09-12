@@ -5,5 +5,7 @@
       Your browser doesn't support playing this video.
     </video>
   </a>
-  <figcaption>{{ include.caption }}</figcaption>
+  {% if include.caption %}
+  <figcaption class="small quiet">{{ include.caption }}</figcaption>
+  {% endif %}
 </figure>

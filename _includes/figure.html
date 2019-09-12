@@ -2,5 +2,7 @@
   <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
     <img src="{{ include.src }}" alt="{{ include.alt }}"/>
   </a>
-  <figcaption>{{ include.caption }}</figcaption>
+  {% if include.caption %}
+  <figcaption class="small quiet">{{ include.caption }}</figcaption>
+  {% endif %}
 </figure>

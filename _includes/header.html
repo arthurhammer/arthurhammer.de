@@ -1,14 +1,12 @@
 <header class="mb6">
-  <nav>
-    <div>
-      <h1 class="site-title"><a href="{{ "/" | relative_url }}">{{ site.author.name }}</a></h1>
-    </div>
-    <div>
-      <ul class="list-unstyled list-inline title mt1">
+  <nav class="site-title link-plain">
+      <h1>
+        <a href="{{ "/" | relative_url }}">{{ site.author.name }}</a>
+      </h1>
+      <ul class="list-unstyled list-inline uppercase">
         <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
-        <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+        <li><a href="https://github.com/{{ site.author.github }}">Projects</a></li>
         <li><a href="{{ "/about/" | relative_url }}">About</a></li>
       </ul>
-  </div>
   </nav>
 </header>
