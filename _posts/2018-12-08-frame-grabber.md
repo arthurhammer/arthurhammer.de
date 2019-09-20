@@ -19,7 +19,7 @@ Before Frame Grabber, I took screenshots of these moments or used third-party ap
 
 Obviously, a screenshot only gives you what you see on screen. What it doesn't give you is the frame in full video quality. A screenshot of a 4k video has the size of the screen, not the video. In addition, the playback device might compress or otherwise distort the video before displaying it on screen.
 
-{% include figure.html src="/assets/2018-12-08-comparison.png" caption="Saving a 1080p video frame on iPhone 8." alt="Comparison of screenshots and frames extracted with Frame Grabber." %}
+{% include figure.html src="/assets/2018-12-08-comparison.jpg" caption="Saving a 1080p video frame on iPhone 8." alt="Comparison of screenshots and frames extracted with Frame Grabber." %}
 
 Not good enough for sharing the image on social media or archiving it to my photo library. I want the best quality there is, straight out of the video.
 
