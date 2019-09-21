@@ -39,11 +39,11 @@ From the bottom left chart we can see that at least on Fridays and Saturdays, I 
 
 Here is one dot for every photo in my library. Again, you can see the increase in photo density over time.
 
-Looking at this chart feels weirdly intimate. These are just dots—not even pictures—but they represent a lot of individual moments in my life. I gets even more intimate when we check what I've been up to on individual days:
+Looking at this chart feels weirdly intimate. These are just dots—not even pictures—but they represent a lot of individual moments in my life. It gets even more intimate when we check what I've been up to on individual days:
 
 {% include figure.html src="/assets/2018-12-08-day.jpg" caption="My weekend trip to Berlin in photos." alt="My weekend trip to Berlin in photos." %}
 
-Just by looking at the photo pattern from my Berlin trip, I start to remember individual moments. Friday is empty as I was working late, then driving to Berlin and arriving at night. Saturday I explored the city. Sunday morning I spectated the Berlin Marathon, in the afternoon I visited a friend.
+Just by looking at the photo pattern from my Berlin trip, I start to remember individual moments. Friday is empty as I was working late, then driving to Berlin and arriving at night. Saturday I explored the city. Sunday morning I watched the Berlin Marathon, in the afternoon I visited a friend.
 
 It goes to show how much meaning there is in metadata alone, and that's just for dates. The photos I take usually include a geolocation tag as well. Mapping out photos by date and location could give me a reasonably detailed account on where I've been on any given day. For my Berlin trip, I was taken back to the places, museums and restaurants I visited. Without once looking at a single picture.
 

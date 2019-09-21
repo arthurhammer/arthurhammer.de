@@ -3,9 +3,12 @@ title: Playground Map
 description: Designing a map of playgrounds.
 ---
 
-{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="A 20 × 30 cm custom designed print map of playgrounds in Braunschweig, Germany." alt="Playground map of Braunschweig, Germany." %}
+{% include figure.html src="/assets/2019-05-30-mapstyle.jpg" caption="A map style designed for playgrounds in Braunschweig, Germany." alt="A map style for playgrounds." %}
 
 My girlfriend's inner child likes visiting playgrounds. As a little gift to her, I wanted to design a print map of playgrounds in our city. She can use the map to find new playgrounds and check off which ones she’s visited already.
+
+{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="The final map printed as a 30 × 20 cm flyer." alt="Playground map of Braunschweig, Germany." %}
+
 
 Making the map consisted of two main steps: getting the data and designing the map.
 
@@ -44,7 +47,7 @@ That left me with 161 playgrounds. Since I'd be showing only the districts aroun
 
 Now for the fun part, designing the map.
 
-{% include figure.html src="/assets/2019-05-30-mapstyle.jpg" caption="A custom map style for playgrounds." alt="A map style for playgrounds." %}
+{% include figure.html src="/assets/2019-05-30-mapstyle.jpg" alt="A map style for playgrounds." %}
 
 In the spirit of playing and playgrounds, I wanted the map to be lighthearted and fun, taking cues from children's maps. The street network should appear muted but other landmark features like parks and lakes I wanted to be bold. This lets the playground locations stand out but still allows the map to be used for navigation. Finally, I highlighted the city district names to give an additional navigational context.
 
@@ -57,8 +60,8 @@ You can try out an interactive version of the map [here](https://api.mapbox.com/
 
 ## Printing
 
+{% include figure.html src="/assets/2019-05-30-playgroundmap2.jpg" caption="" alt="Playground map of Braunschweig" %}
+
 Initially, I planned to make a high-quality print and frame the map. During the process I decided against it for two reasons: First, a framed map on the wall can’t be readily used for navigating to playgrounds and crossing off visited ones. Second, frames come with an obligation to hang them up the wall. I don't like that. In the end, I settled for a DIN A4 printout folded into a little flyer.
 
 I’m quite pleased with the result and my girlfriend is too.
-
-{% include figure.html src="/assets/2019-05-30-playgroundmap2.jpg" caption="" alt="Playground map of Braunschweig" %}
