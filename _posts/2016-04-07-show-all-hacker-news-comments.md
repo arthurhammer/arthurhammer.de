@@ -3,7 +3,11 @@ title: Show All Hacker News Comments
 description: A userscript to show the containing thread for a single comment page on Hacker News.
 ---
 
-***Update December 2016**: This feature finally made it natively into Hacker News. This userscript is now obsolete.*
+---
+
+**Update December 2016**: This feature finally made it natively into Hacker News. This userscript is now obsolete.
+
+---
 
 {% include figure.html src="/assets/2016-04-07-screenshot.png" alt="screenshot" %}
 

@@ -3,6 +3,12 @@ title: Pinboard Extension
 description: A Safari extension for Pinboard to bookmark the current website.
 ---
 
+---
+
+**Update September 2019**: This project is deprecated. Apple droppped any support for extensions not bundled with apps from the App Store with Safari 13 (September 2019).
+
+---
+
 {% include figure.html src="/assets/2015-04-06-screenshot.png" alt="screenshot" %}
 
 I have been looking for a simple [Pinboard](https://pinboard.in) browser extension for Safari but couldn't find one that I liked. The ones I did find were a tad too clunky and complex. The ideal extension would allow me to bookmark the current website in Pinboard and nothing more. It would open the default Pinboard bookmarking form and place the current mouse selection into the description field.

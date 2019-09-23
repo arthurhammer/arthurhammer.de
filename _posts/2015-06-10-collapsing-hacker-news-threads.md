@@ -3,7 +3,11 @@ title: Collapsing Hacker News Threads
 description: A browser extension to collapse comments on Hacker News.
 ---
 
-***Update December 2016***: *I'm happy to see that this feature finally made it natively into Hacker News. This extension is now obsolete.*
+---
+
+**Update December 2016**: This extension is obsolete. This feature made it into Hacker News natively, finally!
+
+---
 
 {% include figure.html src="/assets/2015-06-10-screenshot.png" alt="screensot" %}
 
