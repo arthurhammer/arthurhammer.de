@@ -4,7 +4,8 @@ description: The homepage, blog, projects of Arthur Hammer
 author:
   name: Arthur Hammer
   email: hi@arthurhammer.de
-  github:  arthurhammer
+  github:  https://github.com/arthurhammer
+  instagram: https://instagram.com/ar.hammer
 repo: https://github.com/arthurhammer/arthurhammer.de
 
 # jekyll-seo-tag
