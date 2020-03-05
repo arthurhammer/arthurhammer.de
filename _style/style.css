@@ -164,7 +164,6 @@ ul li {
 
 figure {
   margin: 1em 0;
-  text-align: center;
 }
 
 article img,
@@ -177,6 +176,7 @@ video {
 
 figcaption {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .replay-control {
