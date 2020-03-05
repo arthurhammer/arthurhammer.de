@@ -48,7 +48,7 @@ body {
 
   font-family: IBM Plex Serif, system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -90,7 +90,7 @@ h4, h5, h6 {
 
 /* Move headings closer to following content. */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 0.5rem;
 }
 
@@ -99,7 +99,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6,
 h1+p, h2+p, h3+p, h4+p, h5+p, h6+p,
 h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul
 h1+ol, h2+ol, h3+ol, h4+ol, h5+ol, h6+ol {
-  margin-top: 0.5rem
+  margin-top: 1rem
 }
 
 /* And here. */
@@ -176,7 +176,6 @@ video {
 
 figcaption {
   margin-top: 0.5rem;
-  text-align: center;
 }
 
 .replay-control {
@@ -281,7 +280,7 @@ hr {
 */
 
 pre {
-  padding: 10px 30px;
+  padding: 10px 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-color);
