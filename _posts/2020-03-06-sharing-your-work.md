@@ -27,10 +27,6 @@ The post quickly became the forum's top post and stayed there overnight. It rece
 
 I attribute the warm welcome mainly to three things:
 
-<!-- 1. **It's actually a good app**: It is polished, has a single use case and it does it well.
-2. **It's open:** It is open-source, free and respects the user's privacy.
-3. **It's transparent and authentic**: Or rather I was in how I communicated about it as its developer. -->
-
 **It's actually a good app**. I mean it has to or people wouldn't like it. I think I hit a nerve here in providing a clean, easy-to-use utility that is focused on one use case. And it does it really well without any rough edges.
 
 **It's open**. The app is completely free with nothing to unlock. This is what I promised myself for my first app. But it is also open-source with a permissive license. It respects the user's privacy and contains no ads or analytics. All taken together, people felt they can trust my app.

@@ -3,8 +3,6 @@ title: Status Bar Tester
 description: Like ⌘Y in the Simulator but on your device.
 ---
 
-<!-- Quickly test the double-height status bar in your app on a real device. -->
-
 {% include figure.html src="/assets/2019-09-05-statusbars.png" caption="How the in-call status bar affects the layout of your app. Left: devices without a notch. Right: with notch." alt="Types of iOS status bars." %}
 
 When the status bar on iOS changes its size, apps need to react and adapt their layout. In theory, Auto Layout should handle most things automatically. But there are cases where responding to the status bar is not trivial and requires some testing.

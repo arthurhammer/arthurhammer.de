@@ -21,21 +21,23 @@
 
 :root {
   color-scheme: light dark;
-  --text-color: #333;
+  --text-color: #222;
   --quiet-color: #666;
-  --link-color: #0000ee;
-  --link-visited-color: #00008b;
+  --link-color: #402cee;
+  --link-visited-color: #402cee;
   --border-color: #ddd;
+  --inline-code-color: rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #2a2a2a;
-    --text-color: #ccc;
-    --quiet-color: #999;
-    --link-color: #5ac8fa;
-    --link-visited-color: #9268e0;
+    background-color: #111;
+    --text-color: #ddd;
+    --quiet-color: #aaa;
+    --link-color: #63d3ff;
+    --link-visited-color: #63d3ff;
     --border-color: #666;
+    --inline-code-color: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -44,11 +46,11 @@
 body {
   max-width: 700px;
   margin: auto;
-  padding: 16px;
+  padding: 20px;
 
   font-family: IBM Plex Serif, system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.65;
 
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -57,7 +59,7 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
-      font-size: 17px;
+      font-size: 16px;
   }
 }
 
@@ -88,18 +90,22 @@ h4, h5, h6 {
   font-size: 1.1rem;
 }
 
-/* Move headings closer to following content. */
+/* Move headings further away from previous content. */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
 }
 
-/* Except here. */
-h1+h2, h2+h3, h3+h4, h4+h5, h5+h6,
+/* And closer to following content. */
 h1+p, h2+p, h3+p, h4+p, h5+p, h6+p,
 h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul
 h1+ol, h2+ol, h3+ol, h4+ol, h5+ol, h6+ol {
-  margin-top: 1rem
+  margin-top: 0.5rem;
+}
+
+/* Except here. */
+h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
+  margin-top: 1rem;
 }
 
 /* And here. */
@@ -108,37 +114,41 @@ header {
   margin-bottom: 2rem;
 }
 
-.site-title h1 {
+.site-title {
   margin: 0;
   font-size: 1.5rem;
-  letter-spacing: -1px;
-}
-
-.site-title ul {
-  font-size: 0.95rem;
-  letter-spacing: 1px;
 }
 
 /* Links */
 
 a {
   text-decoration: none;
-  text-decoration-skip: ink;
-  color: var(--link-color);
+  color: var(--text-color);
+  border-bottom: 1px solid rgba(37,37,37,0.5);
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-a:visited {
-  color: var(--link-visited-color);
+  border-bottom: 1px solid var(--link-color);
+  color: var(--link-color);
 }
 
 a.link-plain,
 .link-plain a {
   color: inherit;
   text-decoration: inherit;
+  border-bottom: none;
+}
+
+a:hover.link-plain,
+.link-plain a:hover {
+  border-bottom: 1px solid var(--link-color);
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
 }
 
 /* Lists */
@@ -157,6 +167,8 @@ ul li {
 
 .list-inline li {
   display: inline-block;
+}
+.list-inline li:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -174,15 +186,13 @@ video {
   margin: auto;
 }
 
-figcaption {
-  margin-top: 0.5rem;
+.player-controls {
+  /* Display emoji correctly */
+  font-family: sans-serif;
 }
 
-.replay-control {
-  margin-top: 0.5rem;
+.player-controls > * {
   cursor: pointer;
-  color: var(--text-color);
-  fill: var(--text-color);
 }
 
 /* Other */
@@ -250,18 +260,24 @@ hr {
 .mt1 {
   margin-top: 10px;
 }
+.mr1 {
+  margin-right: 10px;
+}
 
 /* Util */
 
-.quiet { color: var(--quiet-color); }
-.strong, strong { font-weight: bold; }
-.inline { display: inline-block; }
 .hidden { display: none; }
+.inline { display: inline-block; }
 .fl { float: left; }
 .fr { float: right; }
+
+.quiet { color: var(--quiet-color); }
+.strong, strong { font-weight: bold; }
 .center { text-align: center; }
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }
+.tightened { letter-spacing: -1px; }
+.widened { letter-spacing: 1px; }
 
 .tiny  { font-size:  .8rem; }
 .small, small, .footnotes { font-size:  0.95rem; }
@@ -284,16 +300,16 @@ pre {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 code { /* Inline code */
   font-family: SFMono-Regular, SF Mono, Inconsolata, Source Code Pro, Menlo, Monaco, monospace;
   font-size: .9rem;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem;
 
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
+  background-color: var(--inline-code-color);
+  border-radius: 4px;
 
   /* Break inline code */
   white-space: pre-wrap;

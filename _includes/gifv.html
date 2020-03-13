@@ -1,17 +1,26 @@
 <figure>
+
   <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
-    <video autoplay muted playsinline>
-      <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
+    <video autoplay muted playsinline
+           onplay="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '⏸️';"
+           onpause="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '▶️';">
+
+    <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
       Your browser doesn't support playing this video.
     </video>
   </a>
+
   {% if include.caption %}
-  <figcaption class="small quiet mb1 center">{{ include.caption }}</figcaption>
+  <figcaption class="small quiet center mt1">{{ include.caption }}</figcaption>
   {% endif %}
 
-  <div class="replay-control small strong center" onclick="const video = this.closest('figure').getElementsByTagName('video')[0]; video.currentTime = 0; video.play();">
-    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M12 1a.506.506 0 0 0-.305-.46.492.492 0 0 0-.547.108l-1.015 1.008A6.073 6.073 0 0 0 6 0C2.695 0 0 2.695 0 6s2.695 6 6 6c1.79 0 3.477-.79 4.617-2.164.078-.102.078-.25-.015-.336l-1.07-1.078a.3.3 0 0 0-.196-.07.255.255 0 0 0-.18.093A3.955 3.955 0 0 1 6 10c-2.203 0-4-1.797-4-4 0-2.203 1.797-4 4-4 1.023 0 1.992.39 2.727 1.07L7.648 4.148a.482.482 0 0 0-.109.54A.501.501 0 0 0 8 5h3.5c.273 0 .5-.227.5-.5V1z"></path></svg>
-    Replay
+  <div class="player-controls center mt1">
+    <span class="play mr1" onclick="const video = this.closest('figure').getElementsByTagName('video')[0]; if (video.paused) video.play(); else video.pause();">
+      ▶️
+    </span>
+    <span onclick="const video = this.closest('figure').getElementsByTagName('video')[0]; video.currentTime = 0; video.play();">
+      ↩️
+    </span>
   </div>
 
 </figure>
