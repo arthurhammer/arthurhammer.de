@@ -1,6 +1,6 @@
 # Site
-title: arthurhammer.de
-description: The homepage, blog, projects of Arthur Hammer
+title: Arthur Hammer
+description: Blog, website and projects
 author:
   name: Arthur Hammer
   email: hi@arthurhammer.de
@@ -19,6 +19,8 @@ google_site_verification: knvANMeDeDlyFLBmV6H8_CZyVgm0ODw1ZEJEmYh2JQM
 url: "https://arthurhammer.de"
 permalink: /:year/:month/:title/
 host: 0.0.0.0
+
+excerpt_separator: <!--more-->
 
 include:
   - .htaccess
