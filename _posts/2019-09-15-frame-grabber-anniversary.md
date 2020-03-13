@@ -5,7 +5,7 @@ description: Looking back on Frame Grabber, my first iOS app.
 
 {% include figure.html src="/assets/2019-09-15-review.png" alt="Frame Grabber review and analytics." %}
 
-A year ago on this day, I released my first iOS app on the App Store, [Frame Grabber](https://apps.apple.com/app/frame-grabber/id1434703541). I wrote about [how I made Frame Grabber here]({% post_url 2018-12-08-frame-grabber %}).
+A year ago on this day, I released my first iOS app on the App Store, [Frame Grabber](https://apps.apple.com/app/frame-grabber/id1434703541).<!--more-->I wrote about [how I made Frame Grabber here]({% post_url 2018-12-08-frame-grabber %}).
 
 Since the release, I've barely touched the code base again. I actually had plans for versions 1.1 through 1.3, at least. Version 1.1 was almost ready but then I stopped working on it. While I was using Frame Grabber from day to day I realised I didn't have any need for new features. It's a utility app that does the job it's designed for very well. It's quick, light and simple. Bug reports from active users were lacking and those features that were actually requested were out of the scope of the app. There was nothing to do.
 

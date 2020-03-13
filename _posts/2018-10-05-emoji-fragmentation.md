@@ -10,6 +10,8 @@ The term *Emoji Fragmentation* describes two issues when dealing with emojis:
 1. Different platforms and versions thereof support different sets of emojis.
 2. The same emojis look differently across platforms and versions thereof.
 
+<!--more-->
+
 In the first case, an emoji you send to a friend might render as a placeholder box if it's [not available on her platform](https://blog.emojipedia.org/androids-emoji-problem/). In the second case, the meaning of what you want to convey [might change slightly or sometimes drastically](https://twitter.com/jes_chastain/status/959202943340765184) depending on the reciever's device. While emoji support and visual styles [seem to be converging](https://blog.emojipedia.org/2018-the-year-of-emoji-convergence/) over time across platforms, fragmentation still remains a problem.
 
 Before sending a sensitive message, I go as far as consulting [Emojipedia](https://emojipedia.org) to make sure my intentions remain clear when received on a different platform. This is a cumbersome process so it was time to automate it.

@@ -3,9 +3,11 @@ title: Counting Mountain Summits with Strava
 description: Figuring out how often I've climbed this one mountain.
 ---
 
-{% include figure.html src="/assets/2018-06-19-main.jpg" caption="Finding summits" alt="The Brocken summit" %}
+{% include figure.html src="/assets/2018-06-19-main.jpg" alt="The Brocken summit" %}
 
 There's a small mountain near me that I've probably summited dozens of times so far. I don’t keep track but I’ve always been curious about the exact number. Let’s find out.
+
+<!--more-->
 
 The mountain in question is the [Brocken](https://en.wikipedia.org/wiki/Brocken), with 1141 meters the highest peak in the [Harz mountains](https://en.wikipedia.org/wiki/Harz). In this post, we’ll determine the number of times I’ve successfully climbed it by analyzing all my [Strava](https://www.strava.com) activities. To date, I have about 800 runs, hikes and other activities logged on there.
 

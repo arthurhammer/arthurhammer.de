@@ -7,7 +7,9 @@ A week ago, I released [Frame Grabber](https://github.com/arthurhammer/FrameGrab
 
 {% include figure.html src="/assets/2020-03-06-screenshots.jpg" alt="Frame Grabber 1.1" %}
 
-## 1.1
+<!--more-->
+
+## In the Making
 
 I started Frame Grabber to learn iOS development. It's a little app that lets you export full-sized frames from videos and, now, Live Photos. I use it save quality stills of the coolest moments in my 4k videos.
 

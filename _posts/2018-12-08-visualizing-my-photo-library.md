@@ -3,19 +3,19 @@ title: Visualizing My Photo Library
 description: Spotting trends in 19k photos.
 ---
 
-**Note**: There's an interactive version of this post [as an Observable notebook here](https://beta.observablehq.com/d/2b277150e16e933e).
-
----
-
-I keep the majority of my photos in my iCloud photo library. It keeps growing steadily with a total of 18 868 photos in there currently.[^1] I wanted to make some sense of all that data and see my photo-taking habits visualized.
+I keep the majority of my photos in my iCloud photo library. It keeps growing steadily with a total of 18 868 photos in there currently. I wanted to make some sense of all that data and see my photo-taking habits visualized.
 
 So let's chart how and when I take photos.
+
+ <!--more-->
+
+**Note**: Check out an interactive version of this post [as an Observable notebook here](https://beta.observablehq.com/d/2b277150e16e933e).
 
 ## By Year and Month
 
 {% include figure.html src="/assets/2018-12-08-year.jpg" caption="Number of photos by year and month. Click for full image." alt="Number of photos by year and month" %}
 
-We start with the number of photos I took each year. It is displayed in the chart at the top. The trend is obvious, I take more photos each year. While 2012 to 2016 saw moderate growth, I was quite surprised by the explosion in 2017 and 2018.
+We start with the number of photos I took each year.[^1] It is displayed in the chart at the top. The trend is obvious, I take more photos each year. While 2012 to 2016 saw moderate growth, I was quite surprised by the explosion in 2017 and 2018.
 
 I see a few reasons for this: Obviously, I just take more photos in general. But I also stopped filtering myself. I now take a lot of pictures of everday mundane things for archival purposes, like a visual diary. Ten years down the road, I want to get a good feel of how my life is today. Finally, I started asking friends and family to share their photos with me more regurlarly.
 

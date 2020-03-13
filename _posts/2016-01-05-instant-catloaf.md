@@ -7,7 +7,9 @@ description: Automating lifting my mood with IFTTT, Workflow and cats.
 
 For a quick pick-me-up, I sometimes browse the [catloaf forum](https://www.reddit.com/r/Catloaf/). At catloaf is a cat that looks like...a loaf. There is just something special about those goofy cats.
 
- The problem is the catloaf forum's post volume is rather low which means I've most likely seen the most recent posts. Also, there's just the general hassle of opening the website and navigating the forum. Too slow. I wanted to speed up my catloaf delivery for when I need it the most.
+<!--more-->
+
+The problem is the catloaf forum's post volume is rather low which means I've most likely seen the most recent posts. Also, there's just the general hassle of opening the website and navigating the forum. Too slow. I wanted to speed up my catloaf delivery for when I need it the most.
 
 ## Solution
 

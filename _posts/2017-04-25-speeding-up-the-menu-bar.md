@@ -9,6 +9,8 @@ I don't use a lot of shortcuts. I know a core set I for my most used application
 - They are **not unique**. Collisions happen resulting in nothing or possibly the wrong thing.
 - They are **abstract** and do not describe the actions they represent.
 
+<!--more-->
+
 The last point is key. I associate actions with names, not with symbols. Names can be remembered and searched. And the best thing is actions with names can be triggered with a search.
 
 ## Searching the Menu Bar

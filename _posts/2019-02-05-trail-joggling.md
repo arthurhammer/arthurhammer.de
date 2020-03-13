@@ -5,7 +5,7 @@ description: Inventing a new sport.
 
 {% include gifv.html src="/assets/2019-02-05-trail-joggling.mp4" alt="Trail Joggling" %}
 
-I have been running for quite some time now and recently picked up a bit of juggling. I was excited when I learned about [joggling](https://en.wikipedia.org/wiki/Joggling) which is the combination of both. It's not as niche as it sounds and surprisingly competitive: The half marathon joggling record is 1:20 hours which is 14 minutes faster than my personal record without juggling!
+I have been running for quite some time now and recently picked up a bit of juggling. I was excited when I learned about [joggling](https://en.wikipedia.org/wiki/Joggling) which is the combination of both. <!--more--> It's not as niche as it sounds and surprisingly competitive: The half marathon joggling record is 1:20 hours which is 14 minutes faster than my personal record without juggling!
 
 Since my love for running is not on the roads but on the trail I was eager to combine [trail running](https://en.wikipedia.org/wiki/Trail_running) with juggling. I call it **Trail Joggling**. If you trust Google, me and just [one other lunatic](https://acrotrekker.com/2016/02/26/joggling-the-looper-bowl/) are the only ones to have ever used that term on the entire internet. That's a niche sport!
 

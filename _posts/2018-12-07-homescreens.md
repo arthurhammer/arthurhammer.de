@@ -3,9 +3,11 @@ title: 5 Years of Home Screens
 description: Putting together monthly iOS home screens of the last 5 years.
 ---
 
-{% include figure.html src="/assets/2018-12-07-homescreens.jpg" href="/assets/2018-12-07-homescreens-full.jpg" caption="Click for full image." alt="All home screens of the past five years." %}
+{% include figure.html src="/assets/2018-12-07-homescreens.jpg" href="/assets/2018-12-07-homescreens-full.jpg" alt="All home screens of the past five years." %}
 
 About five years ago, I started taking one screenshot of my iPhone home screen each month and archiving it. I really don't know why but I just kept doing it. With 2018 coming to and end, it was time to sit down and put all home screens together. The result is a curious cross section of my iPhone usage history.
+
+ <!--more-->
 
 ## Observations
 

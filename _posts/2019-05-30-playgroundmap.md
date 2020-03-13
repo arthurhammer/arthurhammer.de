@@ -7,8 +7,9 @@ description: Designing a map of playgrounds.
 
 My girlfriend's inner child likes visiting playgrounds. As a little gift to her, I wanted to design a print map of playgrounds in our city. She can use the map to find new playgrounds and check off which ones she’s visited already.
 
-{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="The final map printed as a 30 × 20 cm flyer." alt="Playground map of Braunschweig, Germany." %}
+<!--more-->
 
+{% include figure.html src="/assets/2019-05-30-playgroundmap.jpg" caption="The final map printed as a 30 × 20 cm flyer." alt="Playground map of Braunschweig, Germany." %}
 
 Making the map consisted of two main steps: getting the data and designing the map.
 

@@ -7,6 +7,8 @@ A while ago, I published my first app on the App Store, [Frame Grabber](https://
 
 Here are my reflections on developing and releasing the app.
 
+<!--more-->
+
 {% include gifv.html src="/assets/2018-12-08-screenshot.mp4" caption="Using Frame Grabber to capture Eliud Kipchoge as he sets the marathon world record in Berlin 2018." alt="Frame Grabber in action." %}
 
 ## Idea

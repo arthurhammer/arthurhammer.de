@@ -3,15 +3,13 @@ title: Collapsing Hacker News Threads
 description: A browser extension to collapse comments on Hacker News.
 ---
 
----
-
 **Update December 2016**: This extension is obsolete. This feature made it into Hacker News natively, finally!
-
----
 
 {% include figure.html src="/assets/2015-06-10-screenshot.png" alt="screensot" %}
 
 One thing I miss from [Hacker News](https://news.ycombinator.com) is the ability to collapse comment trees. Long threads can be quite hard to read and it is easy to lose your place. I got used to this feature on [reddit](https://www.reddit.com) and wanted to bring it over.
+
+<!--more-->
 
 Here are a [Safari extension and a userscript](https://github.com/arthurhammer/hackernews-collapse), whichever you prefer. Both add a button to every comment, click it to hide or show child comments.
 

@@ -3,13 +3,11 @@ title: Man Page for Alfred
 description: A workflow that documents your workflows.
 ---
 
----
-
 **Update June 2019**: This workflow was built for Alfred 3. Alfred 4 now comes with a [native feature very similar to this](https://www.alfredapp.com/whats-new/).
 
----
-
 [Alfred](https://alfredapp.com) is the one most indispensable app on my system. In essence, it is a file launcher similar to Apple's Spotlight but it allows you to do so much more. Its power comes from user-defined *workflows* with full scripting support that can do any number of things.
+
+<!--more-->
 
 The problem is it's easy to lose sight of all the workflows you have installed, what they do and how they are launched. Some are launched by shortcuts and others by keywords that need remembering. Alfred itself doesn't provide much in terms of documentation for installed workflows.
 

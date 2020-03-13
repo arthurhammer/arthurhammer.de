@@ -7,6 +7,8 @@ description: Reflecting on the Table of Contents for GitHub browser extension.
 
 I thought I'd reflect a bit on making [*Table of Contents for GitHub*](https://github.com/arthurhammer/github-toc) while it's still fresh in my mind.
 
+<!--more-->
+
 ## About
 
 [Table of Contents for GitHub](https://github.com/arthurhammer/github-toc) is a simple browser extension that adds a table of contents to readmes, wikis, gists and basically any other structured text file on GitHub. It helps you quickly find what you are looking for. The project is partially inspired by [this popular issue](https://github.com/isaacs/github/issues/215). Read more about it [in my earlier post]({% post_url 2015-11-27-table-of-contents-for-github %}).

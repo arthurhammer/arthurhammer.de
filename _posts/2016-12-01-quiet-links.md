@@ -12,6 +12,8 @@ description: A CSS stylesheet to mute distracting links for focused reading.
 
 [Quiet Links](https://github.com/arthurhammer/userscripts/tree/master/QuietLinks) is my answer to the [Wikipedia Rabbit Hole](https://xkcd.com/214/). It is a stylesheet to quiet down links on pages to help you focus on reading.
 
+<!--more-->
+
 Look at a typical Wikipedia article:
 
 {% include figure.html src="/assets/2016-12-01-screenshot.png" alt="Screenshot" caption="The stylesheet in action" %}

@@ -26,6 +26,7 @@
   --link-color: #402cee;
   --link-visited-color: #402cee;
   --border-color: #ddd;
+  --link-border-color:rgba(37, 37, 37, 0.5);
   --inline-code-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -37,6 +38,7 @@
     --link-color: #63d3ff;
     --link-visited-color: #63d3ff;
     --border-color: #666;
+    --link-border-color:rgba(237, 237, 237, 0.5);
     --inline-code-color: rgba(255, 255, 255, 0.1);
   }
 }
@@ -66,7 +68,7 @@ body {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6,
-.site-title, nav, header, footer, figcaption, figure, footnote, time {
+.site-title, nav, header, footer, figcaption, figure, footnote, time, .button {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -110,7 +112,6 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 
 /* And here. */
 header {
-  margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
@@ -119,12 +120,22 @@ header {
   font-size: 1.5rem;
 }
 
+/* Articles */
+
+article h1 {
+  margin-top: 0;
+}
+
+article {
+  border-bottom: thin solid var(--border-color);
+}
+
 /* Links */
 
 a {
   text-decoration: none;
   color: var(--text-color);
-  border-bottom: 1px solid rgba(37,37,37,0.5);
+  border-bottom: 1px solid var(--link-border-color);
 }
 
 a:hover {
@@ -235,6 +246,10 @@ hr {
 .pad2y {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.pad4y {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .pad1r {

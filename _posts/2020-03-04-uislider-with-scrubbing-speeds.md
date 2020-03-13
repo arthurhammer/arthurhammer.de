@@ -7,6 +7,8 @@ Scrubbing through a video with a slider can be difficult. The longer the video i
 
 There's a nice solution to this, rather hidden in iOS’ video player component `AVPlayerViewController`. When you slide your finger up and away from the slider, the rate at which the time changes reduces. The further away you are, the slower it gets.
 
+<!--more-->
+
 {% include gifv.html src="/assets/2020-03-04-framegrabber.mp4" caption="Variable scrubbing speeds in Frame Grabber." %}
 
 [Frame Grabber](https://github.com/arthurhammer/FrameGrabber) is all about picking the right moment, down to the exact frame. It's the perfect fit for this behavior and I just shipped it in an update. Selecting frames is now a lot easier.
