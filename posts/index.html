@@ -14,9 +14,9 @@ layout: default
     {% endif %}
 
     <li class="mb2">
-      <a href="{{ post.url | relative_url }}" class="strong link-plain">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}" class="strong link-plain">{{ post.title | xml_escape }}</a>
       {% if post.description %}
-      <div class="quiet small" >{{ post.description }}</div>
+      <div class="quiet small" >{{ post.description | xml_escape }}</div>
       {% endif %}
     </li>
 
