@@ -128,7 +128,7 @@ article h1 {
   margin-top: 0;
 }
 
-article {
+article:not(:last-of-type) {
   border-bottom: thin solid var(--border-color);
 }
 
@@ -313,11 +313,10 @@ hr {
 */
 
 pre {
-  padding: 10px 10px;
+  padding: 2px 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border-left: 5px solid rgba(205, 233, 244, 1);
 }
 
 code { /* Inline code */
