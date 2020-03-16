@@ -2,6 +2,9 @@
 
   <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
     <video autoplay muted playsinline
+           {% if include.poster %}
+           poster="{{ include.poster }}"
+           {% endif %}
            onplay="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '⏸️';"
            onpause="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '▶️';">
 
