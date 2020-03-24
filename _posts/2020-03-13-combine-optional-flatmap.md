@@ -3,18 +3,20 @@ title: Observing Nested Properties in Combine
 description: A Swift-native alternative to key-value observing.
 ---
 
-[Combine](https://developer.apple.com/documentation/combine) is the new cool kid on the block. It's Apple's new [functional reactive](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) framework. Only available in Swift and quite a departure from previous first-party paradigms.
+[Key-value observing](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift) is an ancient technology on Apple platforms. It allows objects to be notified of changes to properties of other objects. Working with KVO in Swift has always been cumbersome. It's only available in `NSObject` subclasses, making it impossible to use as your one-stop binding solution.
 
-I wanted to see how Combine stacks up to [key-value observing](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift) when it comes to observing properties. Key-value observing makes it easy to observe values along nested properties.
+[Combine](https://developer.apple.com/documentation/combine), Apple's new [functional reactive](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) framework, promises to change that. It is fully native in Swift and observing properties is one of its many use cases.
 
-It's not immediately clear how to do the same in Combine. We'll explore this topic in this post.
+Replacing KVO with Combine, however, is not without gotchas. What KVO gets right is that it makes it easy to observe *nested* properties. With Combine, it's more difficult.
+
+In this post, I'll explain why that is and how to bridge the gap.
 
 <!--more-->
 
 
 ## What We Want to Do
 
-Say, we have a video player app and want to display the current video title in a label. It's set up like this:
+Say, we have a video player app and want to display the current video title in a label. The setup looks like this:
 
 {% highlight swift %}
 class PlayerViewController: UIViewController {
@@ -31,61 +33,61 @@ class Player {
 }
 {% endhighlight %}
 
-In the view controller, we want to keep the video title and the label in sync. That is, we want to observe the property chain `playbackController?.player?.videoTitle` and update `titleLabel` with its value. This is called a binding.
+Our goal is to keep the video title and the label in sync. In the view controller, we want to observe the nested property `playbackController?.player?.videoTitle` and update `titleLabel` with its value. This is called a binding.
 
 
-### Binding Once
+### Nesting
 
-It is important for the binding to adapt to changes to intermediate properties.
+When observing nested properties, a binding should have one important feature: It needs to be robust against changes to intermediate properties.
 
-Let's say we replace the playback controller's player. We want the binding to report the title of that new player without additional work on our part. In case the player becomes `nil`, the binding should also report `nil`.
+Let me illustrate with an example.
 
-This makes our code simpler and more maintainable. We can define the binding only once when we create the view controller. Properties might still be `nil` at that point. But as soon as we inject values, they propagate automatically.
+Assume we've set up the initial binding. At some point, we replace the playback controller's player:
 
 {% highlight swift %}
-override func viewDidLoad() {
-    super.viewDidLoad()
-    bindLabel()
-}
+let oldPlayer = playbackController.player
+let newPlayer = Player()
+playbackController.player = newPlayer
+{% endhighlight %}
+
+What do we expect to happen? We expect the video title label to display `newPlayer.videoTitle`, not `oldPlayer.videoTitle`. In other words, the binding reports the value of `playbackController?.player?.videoTitle` independent of which specific intermediate instances it is attached to.
+
+The same goes for `nil`. When the player becomes `nil` so should the video title.
+
+This feature has a big advantage. It makes our code simpler and more maintainable. We can define the binding only once when we create the view controller and let any changes propagate automatically.
+
+
+## Key-Value Observing
+
+This is easy to do with key-value observing. In fact, it's its prime use case. KVO allows us to observe *key paths* or chains of nested properties as follows:
+
+{% highlight swift %}
+var token: Any?
 
 func bindLabel() {
-    // Set up binding.
+    token = observe(\.playbackController?.player?.videoTitle, options: .initial) { viewController, _ in
+        viewController.titleLabel.text = viewController.playbackController?.player?.videoTitle
+    }
 }
 {% endhighlight %}
 
+KVO has a big drawback: It's only available in `NSObject` subclasses and properties marked with `@objc dynamic`. We can't use KVO when working with plain Swift types. It's inherently tied to Objective-C.
 
-## Using Key-Value Observing
-
-This is the prime use case of [key-value observing](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift). It allows us to observe values along a key path, i.e. along a chain of properties.
-
-`NSObject` provides a [Combine publisher](https://developer.apple.com/documentation/objectivec/nsobject/keyvalueobservingpublisher) that integrates with key-value observing:
-
-{% highlight swift %}
-var cancellable: AnyCancellable?
-
-func bindLabel() {
-    cancellable = publisher(for: \.playbackController?.player?.videoTitle)
-        .sink { [weak self] title in
-            self?.titleLabel.text = title
-        }
-}
-{% endhighlight %}
-
-This has a big drawback: Key-value observing is tied to Objective-C. It's only available in `NSObject` subclasses and properties exposed to Objective-C via `@objc dynamic`.
-
-We can't use it when working with plain Swift types.
+As a result, developers had to roll their own Swift binding solution while waiting for a native one. With Combine, it finally arrived.
 
 
-## Using Plain Combine
+## Combine
 
-To make properties observable in Combine, we use [publishers](https://developer.apple.com/documentation/combine/publisher). A publisher emits values over time, in our case when a property changes.
+Let's explore how we can create our binding in Combine.
 
-To make an entire chain of properties observable, we need to create a publisher for each one.
+The basic building blocks in Combine are [publishers](https://developer.apple.com/documentation/combine/publisher). A publisher emits values over time, in our case when a property changes.
 
-We can do this conveniently by marking all properties with [`@Published`](https://developer.apple.com/documentation/combine/published). The `@Published` attribute creates a publisher for its property. To refer to the publisher as opposed to the value, we prepend `$` to the property name.
+To make a property observable in Combine, we create a publisher for it. And to make an entire chain of nested properties observable, we need to create a publisher for each one.
+
+We can do this conveniently by marking all properties with [`@Published`](https://developer.apple.com/documentation/combine/published).
 
 
-### Handling Non-Optionals
+### Non-Optionals
 
 First, let's simplify our assumptions. Consider the case where all properties along the chain are non-optionals:
 
@@ -105,6 +107,8 @@ $playbackController
         self?.titleLabel.text = title
     }
 {% endhighlight %}
+
+Note the use of `$`. It refers to the property's publisher as opposed to its value.
 
 [`flatMap`](https://developer.apple.com/documentation/combine/publisher/3204712-flatmap) takes the value from the previous publisher and returns a new one. The playback controller publisher is successively mapped into the video title publisher.
 
@@ -135,7 +139,7 @@ This sink is only triggered when the playback controller instance changes. Chang
 What the latter two get wrong is that they operate on the level of values. The correct solution above operates on the level of publishers. To observe a chain of properties in Combine, we need an unbroken chain of publishers handing down their values.
 
 
-### Handling Optionals
+### Optionals
 
 With optionals, it's trickier. Let's add them back in:
 
@@ -220,13 +224,13 @@ This is the same except for `map`. Its job is to raise the new publisher's outpu
 
 ## Wrapping Up
 
-With both extensions in place, we can finally solve our binding problem as follows:
+With both extensions in place, we can finally create our binding as follows:
 
 {% highlight swift %}
-var cancellable: AnyCancellable?
+var token: Any?
 
 func bindLabel() {
-    cancellable = $playbackController
+    token = $playbackController
         .flatMap { $0?.$player }      // First overload: player is optional
         .flatMap { $0?.$videoTitle }  // Second overload: videoTitle is non-optional
         .sink { [weak self] title in
