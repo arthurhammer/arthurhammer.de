@@ -247,7 +247,7 @@ ul li {
 /* Images, videos */
 
 figure {
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 article img,
@@ -400,17 +400,17 @@ strong,
 }
 
 .tiny {
-    font-size: .8rem;
+    font-size: .8em;
 }
 
 small,
 .small,
 .footnotes {
-    font-size: 0.95rem;
+    font-size: 0.9em;
 }
 
 .large {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .footnotes {
@@ -445,7 +445,7 @@ pre {
 /* Inline code */
 code {
     font-family: SFMono-Regular, SF Mono, Inconsolata, Source Code Pro, Menlo, Monaco, monospace;
-    font-size: .9rem;
+    font-size: .85em;
     padding: 0.2rem;
     background-color: var(--inline-code-color);
     border-radius: 4px;
@@ -456,7 +456,7 @@ code {
 
 /* Code blocks */
 pre code {
-    font-size: .9rem;
+    font-size: .85em;
     padding: 0;
     border: none;
     background-color: inherit;
