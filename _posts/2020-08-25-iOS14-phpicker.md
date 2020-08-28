@@ -1,5 +1,5 @@
 ---
-title: The iOS 14 Photos Picker and Its Limitations
+title: The New iOS 14 Photos Picker and Its Limitations
 description: Evaluating PHPicker for Frame Grabber.
 ---
 
