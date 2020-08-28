@@ -1,6 +1,6 @@
 ---
-title: Show All Hacker News Comments
-description: A userscript to show the containing thread for a single comment page on Hacker News.
+title: Hacking Hacker News
+description: A userscript to add context to comment pages.
 ---
 
 **Update December 2016**: This feature finally made it natively into Hacker News. This userscript is now obsolete.
