@@ -10,7 +10,7 @@ layout: default
 
 
 {% for post in paginator.posts %}
-  <article class="pad4y">
+  <article class="pad6y">
     <header>
       <h1><a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title | xml_escape }}</a></h1>
       {% if post.description %}
@@ -24,6 +24,9 @@ layout: default
 
     <a href="{{ post.url | relative_url }}" class="quiet small">Read more</a>
   </article>
+
+  <div class="fin"></div>
+
 {% endfor %}
 
 <nav class="pad2y">

@@ -145,8 +145,11 @@ article h1 {
     margin-top: 0;
 }
 
-article:not(:last-of-type) {
-    border-bottom: thin solid var(--border-color);
+.fin:not(:last-of-type) {
+    width: 80px;
+    margin: auto;
+    height: 1px;
+    background-color: var(--border-color);
 }
 
 
@@ -177,9 +180,9 @@ a:hover.link-plain,
 
 .button {
     border: 1px solid;
-    border-radius: 8px;
+    border-radius: 12px;
     display: inline-block;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 1.5rem;
 }
 
 
@@ -281,6 +284,11 @@ hr {
 .pad4y {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.pad6y {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .pad1r {
