@@ -1,6 +1,6 @@
 # Site
 title: Arthur Hammer
-description: Blog, website and projects
+description: iOS Developer
 author:
   name: Arthur Hammer
   email: hi@arthurhammer.de
@@ -52,5 +52,5 @@ plugins:
   - jekyll/minibundle
 
 # jekyll-paginate
-paginate: 7
+paginate: 8
 paginate_path: "/:num/"

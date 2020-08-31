@@ -7,25 +7,23 @@
 
 :root {
     color-scheme: light dark;
-    --text-color: #222;
-    --quiet-color: #666;
-    --link-color: #402cee;
-    --link-visited-color: #402cee;
-    --border-color: #ddd;
-    --link-border-color: rgba(37, 37, 37, 0.5);
-    --inline-code-color: rgba(0, 0, 0, 0.05);
+    --text-color: #282b30;
+    --quiet-color: #3c3c4399;
+    --link-color: #007aff;
+    --link-visited-color: #007aff;
+    --border-color: #3c3c434A;
+    --inline-code-color: #7676801f;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #111;
-        --text-color: #ddd;
-        --quiet-color: #aaa;
-        --link-color: #63d3ff;
-        --link-visited-color: #63d3ff;
-        --border-color: #666;
-        --link-border-color: rgba(237, 237, 237, 0.5);
-        --inline-code-color: rgba(255, 255, 255, 0.1);
+        background-color: #191b1f;
+        --text-color: #eee;
+        --quiet-color: #ebebf599;
+        --link-color: #0984ff;
+        --link-visited-color: #0984ff;
+        --border-color: #54545899;
+        --inline-code-color: #7676803d;
     }
 }
 
@@ -62,6 +60,7 @@ h4,
 h5,
 h6 {
     line-height: 1.2;
+    font-weight: 600;
 }
 
 h1 {
@@ -156,14 +155,13 @@ article h1 {
 /* Links */
 
 a {
+    color: var(--link-color);
     text-decoration: none;
-    color: var(--text-color);
-    border-bottom: 1px solid var(--link-border-color);
 }
 
 a:hover {
-    border-bottom: 1px solid var(--link-color);
     color: var(--link-color);
+    border-bottom: 1px solid var(--link-color);
 }
 
 a.link-plain,
@@ -180,9 +178,9 @@ a:hover.link-plain,
 
 .button {
     border: 1px solid;
-    border-radius: 12px;
+    border-radius: 14px;
     display: inline-block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.5rem;
 }
 
 
@@ -240,7 +238,6 @@ video {
 blockquote {
     padding-left: 20px;
     margin-left: 10px;
-    font-weight: 300;
     border-left: 2px solid var(--border-color);
 }
 
@@ -348,7 +345,7 @@ hr {
 
 strong,
 .strong {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .center {

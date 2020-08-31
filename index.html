@@ -22,7 +22,9 @@ layout: default
 
     {{ post.excerpt }}
 
-    <a href="{{ post.url | relative_url }}" class="quiet small">Read more</a>
+    <strong>
+      <a href="{{ post.url | relative_url }}" class=" quiet">Read more</a>
+    </strong>
   </article>
 
   <div class="fin"></div>
@@ -32,11 +34,11 @@ layout: default
 <nav class="pad2y">
   <ul class="list-unstyled list-inline">
     {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}" rel="prev" class="button quiet small">Previous</a></li>
+    <li><a href="{{ paginator.previous_page_path }}" rel="prev" class="button">Previous</a></li>
     {% endif %}
 
     {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path }}" rel="next" class="button quiet small">Next</a></li>
+    <li><a href="{{ paginator.next_page_path }}" rel="next" class="button">Next</a></li>
     {% endif %}
   </ul>
 </nav>
