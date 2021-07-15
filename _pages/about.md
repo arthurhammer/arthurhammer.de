@@ -5,7 +5,7 @@ permalink: /about/
 <div class="about">
   <img class="avatar" src="/assets/avatar-v1.jpg">
   <p>
-    Hi, I’m Arthur, an iOS developer and Computer Science major. 👋
+    Hi, I’m Arthur, an iOS developer from Hamburg, Germany. 👋
   </p>
   <p>
     I love building focused, easy-to-use tools.
