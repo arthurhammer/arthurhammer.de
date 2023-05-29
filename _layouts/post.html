@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="pad4y">
+  <header>
+    <h1>{{ page.title | xml_escape }}</h1>
+    {% if page.description %}
+    <div class="quiet">
+      {{ page.description | xml_escape }}
+    </div>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  {% if page.date %}
+  <footer>
+    <time class="quiet small" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %Y" }}</time>
+  </footer>
+  {% endif %}
+</article>

@@ -1,0 +1,56 @@
+# Site
+title: Arthur Hammer
+description: iOS Developer
+author:
+  name: Arthur Hammer
+  email: hi@arthurhammer.de
+  github:  https://github.com/arthurhammer
+  instagram: https://instagram.com/ar.hammer
+repo: https://github.com/arthurhammer/arthurhammer.de
+
+# jekyll-seo-tag
+social:
+  links:
+    - https://github.com/arthurhammer
+    - https://instagram.com/ar.hammer
+    - https://stackoverflow.com/users/4994382
+google_site_verification: knvANMeDeDlyFLBmV6H8_CZyVgm0ODw1ZEJEmYh2JQM
+
+# Build
+url: "https://arthurhammer.de"
+permalink: /:year/:month/:title/
+host: 0.0.0.0
+
+excerpt_separator: <!--more-->
+
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - _private
+  - README.md
+  - LICENSE
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""  # empty for all files
+    values:
+      layout: "post"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll/minibundle
+
+# jekyll-paginate
+paginate: 8
+paginate_path: "/:num/"

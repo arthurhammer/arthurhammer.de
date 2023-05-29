@@ -1,0 +1,29 @@
+<figure>
+
+  <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
+    <video autoplay muted playsinline
+           {% if include.poster %}
+           poster="{{ include.poster }}"
+           {% endif %}
+           onplay="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '⏸️';"
+           onpause="this.closest('figure').getElementsByClassName('play')[0].innerHTML = '▶️';">
+
+    <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
+      Your browser doesn't support playing this video.
+    </video>
+  </a>
+
+  {% if include.caption %}
+  <figcaption class="small quiet center mt1">{{ include.caption }}</figcaption>
+  {% endif %}
+
+  <div class="player-controls center mt1">
+    <span class="play mr1" onclick="const video = this.closest('figure').getElementsByTagName('video')[0]; if (video.paused) video.play(); else video.pause();">
+      ▶️
+    </span>
+    <span onclick="const video = this.closest('figure').getElementsByTagName('video')[0]; video.currentTime = 0; video.play();">
+      ↩️
+    </span>
+  </div>
+
+</figure>

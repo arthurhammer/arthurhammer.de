@@ -1,0 +1,7 @@
+_drafts
+_site
+.jekyll-metadata
+.bundle
+vendor/bundle
+.jekyll-cache
+_private

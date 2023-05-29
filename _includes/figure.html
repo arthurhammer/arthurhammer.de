@@ -1,0 +1,8 @@
+<figure>
+  <a href="{% if include.href %}{{ include.href }}{% else %}{{ include.src }}{% endif %}">
+    <img loading="lazy" src="{{ include.src }}" alt="{{ include.alt }}"/>
+  </a>
+  {% if include.caption %}
+  <figcaption class="small quiet center mt1">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

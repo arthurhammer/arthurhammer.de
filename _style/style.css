@@ -1,0 +1,460 @@
+/* Imports */
+
+@import url(highlight-github.css) screen;
+@import url(highlight-monokai.css) screen and (prefers-color-scheme: dark);
+
+/* Variables & Dark Mode */
+
+:root {
+    color-scheme: light dark;
+    --text-color: #282b30;
+    --quiet-color: #3c3c4399;
+    --link-color: #3137D1;
+    --link-visited-color: #3137D1;
+    --border-color: #3c3c434A;
+    --inline-code-color: #7676801f;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191b1f;
+        --text-color: #eee;
+        --quiet-color: #ebebf599;
+        --link-color: #0984ff;
+        --link-visited-color: #0984ff;
+        --border-color: #54545899;
+        --inline-code-color: #7676803d;
+    }
+}
+
+
+/* Main */
+
+html {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.avatar {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(40,43,48,.4), 0 1px 4px rgba(40,43,48,.1);
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+
+/* Move headings further away from previous content. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* And closer to following content. */
+h1+p,
+h2+p,
+h3+p,
+h4+p,
+h5+p,
+h6+p,
+h1+ul,
+h2+ul,
+h3+ul,
+h4+ul,
+h5+ul,
+h6+ul,
+h1+ol,
+h2+ol,
+h3+ol,
+h4+ol,
+h5+ol,
+h6+ol {
+    margin-top: 0.5rem;
+}
+
+
+/* Except here. */
+h1+h2,
+h2+h3,
+h3+h4,
+h4+h5,
+h5+h6 {
+    margin-top: 1rem;
+}
+
+
+/* And here. */
+header {
+    margin-bottom: 2rem;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+/* Articles */
+
+article h1 {
+    margin-top: 0;
+}
+
+.fin:not(:last-of-type) {
+    width: 80px;
+    margin: auto;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+
+/* Links */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color);
+    border-bottom: 1px solid var(--link-color);
+}
+
+a.link-plain,
+.link-plain a {
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom: none;
+}
+
+a:hover.link-plain,
+.link-plain a:hover {
+    border-bottom: 1px solid var(--link-color);
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 14px;
+    display: inline-block;
+    padding: 0.4rem 1.5rem;
+}
+
+
+/* Lists */
+
+
+/* Keep style on nested lists */
+ul li {
+    list-style-type: disc;
+}
+
+.list-unstyled {
+    padding: 0;
+}
+
+.list-unstyled li {
+    list-style-type: none;
+}
+
+.list-inline li {
+    display: inline-block;
+}
+
+.list-inline li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+
+/* Images, videos */
+
+figure {
+    margin: 1rem 0;
+}
+
+article img,
+video {
+    display: block;
+    max-width: 100%;
+    max-height: 700px;
+    margin: auto;
+}
+
+.player-controls {
+    /* Display emoji correctly */
+    font-family: sans-serif;
+}
+
+.player-controls>* {
+    cursor: pointer;
+}
+
+
+/* Other */
+
+blockquote {
+    padding-left: 20px;
+    margin-left: 10px;
+    border-left: 2px solid var(--border-color);
+}
+
+hr {
+    background: var(--border-color);
+    height: 1px;
+    border: 0;
+}
+
+
+/* Spacing */
+
+.pad1 {
+    padding: 10px;
+}
+
+.pad2 {
+    padding: 20px;
+}
+
+.pad1x {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pad2x {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pad1y {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pad2y {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad4y {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pad6y {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pad1r {
+    padding-right: 10px;
+}
+
+.mb1 {
+    margin-bottom: 10px;
+}
+
+.mb2 {
+    margin-bottom: 20px;
+}
+
+.mb4 {
+    margin-bottom: 40px;
+}
+
+.mb6 {
+    margin-bottom: 60px;
+}
+
+.mb10 {
+    margin-bottom: 100px;
+}
+
+.mt1 {
+    margin-top: 10px;
+}
+
+.mr1 {
+    margin-right: 10px;
+}
+
+
+/* Util */
+
+.hidden {
+    display: none;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.quiet {
+    color: var(--quiet-color);
+}
+
+strong,
+.strong {
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tightened {
+    letter-spacing: -1px;
+}
+
+.widened {
+    letter-spacing: 1px;
+}
+
+.tiny {
+    font-size: .8em;
+}
+
+small,
+.small,
+.footnotes {
+    font-size: 0.9em;
+}
+
+.large {
+    font-size: 1.2em;
+}
+
+.footnotes {
+    border-top: 1px solid var(--quiet-color);
+}
+
+.bordered {
+    border: 1px solid var(--border-color);
+}
+
+.whitened {
+    background-color: white;
+}
+
+
+/* Code */
+
+
+/*
+  Note: Jekyll Liquid `{% highlight ruby %} {% endhighlight %}` code blocks produce
+  different markup than standard Markdown code blocks (```ruby ``` or plain indentation)
+  See: https://github.com/jekyll/jekyll/issues/6446
+*/
+
+pre {
+    padding: 2px 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-left: 5px solid rgba(205, 233, 244, 1);
+}
+
+/* Inline code */
+code {
+    font-family: SFMono-Regular, SF Mono, Inconsolata, Source Code Pro, Menlo, Monaco, monospace;
+    font-size: .85em;
+    padding: 0.2rem;
+    background-color: var(--inline-code-color);
+    border-radius: 4px;
+    /* Break inline code */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Code blocks */
+pre code {
+    font-size: .85em;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    /* Don't break code blocks */
+    white-space: pre;
+    word-wrap: normal;
+}
+
+
+/* Print */
+
+@media print {
+    img {
+        max-width: 500px;
+        max-height: 400px;
+    }
+    code {
+        overflow: visible;
+        white-space: pre-wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}

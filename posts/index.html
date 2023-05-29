@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<nav>
+  {% for post in site.posts %}
+    {% assign year = post.date | date: "%Y" %}
+
+    {% if year != lastYear %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h2>{{ year }}</h2>
+      <ul class="list-unstyled">
+      {% assign lastYear = year %}
+    {% endif %}
+
+    <li class="mb2">
+      <a href="{{ post.url | relative_url }}" class="strong link-plain">{{ post.title | xml_escape }}</a>
+      {% if post.description %}
+      <div class="quiet small" >{{ post.description | xml_escape }}</div>
+      {% endif %}
+    </li>
+
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</nav>
