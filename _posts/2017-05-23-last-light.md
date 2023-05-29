@@ -1,6 +1,6 @@
 ---
 title: Last Light
-description: An iOS Workflow to tell me when it's going to be dark outside.
+description: An iOS Workflow for sunset and daylight left.
 ---
 
 {% include figure.html src="/assets/2017-05-23-trail.jpg" alt="Dark Trails" %}

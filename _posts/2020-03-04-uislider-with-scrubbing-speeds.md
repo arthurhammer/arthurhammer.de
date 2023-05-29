@@ -1,6 +1,6 @@
 ---
-title: Fine-Scrubbing Videos with UISlider
-description: A drop-in UISlider subclass that adds variable scrubbing speeds.
+title: A Custom Slider with Variable Scrubbing Speeds
+description: A drop-in UISlider subclass.
 ---
 
 Scrubbing through a video with a slider can be difficult. The longer the video is, the less accurate the scrubbing will be. Selecting a specific moment in the video can get fiddly and frustrating.
@@ -15,9 +15,9 @@ There's a nice solution to this, rather hidden in iOS’ video player component 
 
 In this post, I'll outline how to implement this interaction. The result is `ScrubbingSlider`, a drop-in `UISlider` subclass that adds variable scrubbing speeds.
 
-You can [find the full implementation here](https://github.com/arthurhammer/blog-example-code/blob/master/2020-03-04-uislider-with-scrubbing-speeds/ScrubbingSlider/ScrubbingSlider.swift) including a small sample project.
+You can find a [small sample project here](https://github.com/arthurhammer/blog-example-code/blob/master/2020-03-04-uislider-with-scrubbing-speeds/ScrubbingSlider/ScrubbingSlider.swift). And here is [the slider in action](https://github.com/arthurhammer/FrameGrabber/tree/develop/Frame%20Grabber/Packages/ThumbnailSlider/Sources/ThumbnailSlider) in Frame Grabber.
 
-**Related Work**: Ole Begemann wrote about a similar solution a looong time ago. [Check it out here](https://oleb.net/blog/2011/01/obslider-a-uislider-subclass-with-variable-scrubbing-speed/).
+Related Work: Ole Begemann presented a [similar solution](https://oleb.net/blog/2011/01/obslider-a-uislider-subclass-with-variable-scrubbing-speed/) a few years ago.
 
 ## Public API
 

@@ -1,5 +1,5 @@
 ---
-title: Hacking Hacker News
+title: Hacker News Scripts Reloaded
 description: A userscript to add context to comment pages.
 ---
 
