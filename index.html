@@ -19,37 +19,3 @@ layout: default
 
 <div class="fin"></div>
 {% endif %}
-
-{% for post in paginator.posts %}
-  <article class="pad6y">
-    <header>
-      <h1><a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title | xml_escape }}</a></h1>
-      {% if post.description %}
-      <div class="quiet">
-        {{ post.description | xml_escape }}
-      </div>
-      {% endif %}
-    </header>
-
-    {{ post.excerpt }}
-
-    <strong>
-      <a href="{{ post.url | relative_url }}" class=" quiet">Read more</a>
-    </strong>
-  </article>
-
-  <div class="fin"></div>
-
-{% endfor %}
-
-<nav class="pad2y">
-  <ul class="list-unstyled list-inline">
-    {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}" rel="prev" class="button">Previous</a></li>
-    {% endif %}
-
-    {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path }}" rel="next" class="button">Next</a></li>
-    {% endif %}
-  </ul>
-</nav>
