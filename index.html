@@ -2,23 +2,34 @@
 layout: default
 ---
 
-{% if paginator.page == 1 %}
-<div class="about pad6y">
-  <img class="avatar mb4" src="/assets/me.jpg">
+<div class="about-container pad4y">
+  <div class="about-info mb4">
+    <img class="about-hero" src="/assets/me.jpg" alt="Profile Picture">
+    <div class="about-info-text">
+      <h1 class="about-info-headline">
+        Arthur Hammer
+      </h1>
+      <h3 class="about-info-subhead secondary-text">
+        iOS Developer focused on user experiences
+      </h3>
+      <div class="about-info-body">
+        I enjoy building delightful apps that are easy to use.
+      </div>
+    </div>
+  </div>
+  
   <p>
-    iOS developer with a passion for building delightful apps. Currently at Parship Group.
   </p>
-  <p>
-    I love building focused, easy-to-use tools.
-    I make <a href="https://framegrabberapp.com" target="_blank">Frame Grabber</a> and Routie (Coming Soon) and always tinker with some smaller projects. Check out my projects on <a href="https://github.com/arthurhammer" target="_blank">GitHub</a>.    
-  </p>
+  
+  
+  <h3>What I'm Interested In</h3>
+
+  
+  <h3>Contact</h3>
   <p>
     <a href="mailto:hi@arthurhammer.de">Contact me via mail</a>.
   </p>
-  <p>
-  My other passions are trail and ultra marathon running and juggling. <a href="{% post_url 2019-07-01-trail-joggling %}">Sometimes at the same time</a>.
-  </p>
-</div>
 
-<div class="fin"></div>
-{% endif %}
+
+
+</div>

@@ -1,29 +1,36 @@
 /* Imports */
 
-@import url(highlight-github.css) screen;
-@import url(highlight-monokai.css) screen and (prefers-color-scheme: dark);
+@import url(highlight-dracula-xcode.css) screen;
+@import url(highlight-dracula-xcode.css) screen and (prefers-color-scheme: dark);
 
 /* Variables & Dark Mode */
 
 :root {
     color-scheme: light dark;
-    --text-color: #282b30;
-    --quiet-color: #3c3c4399;
-    --link-color: #3137D1;
-    --link-visited-color: #3137D1;
+    --accent-color: #C7F860;
+    --seconday-accent-color: #9160F8;
+    --text-color: #323232;
+    --secondary-text-color: #808080;
+    --tertiary-text-color: #BDBDBD;
+    --strong-text-color: black;
+    --link-color: black;
+    --link-visited-color: black;
     --border-color: #3c3c434A;
-    --inline-code-color: #7676801f;
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    html {
         background-color: #191b1f;
+    }
+    body {
+        --accent-color: #6F9005;
         --text-color: #eee;
-        --quiet-color: #ebebf599;
-        --link-color: #0984ff;
-        --link-visited-color: #0984ff;
+        --secondary-text-color: #FFFFFF8C;
+        --tertiary-text-color: #FFFFFF3F;
+        --strong-text-color: white;
+        --link-color: white;
+        --link-visited-color: white;
         --border-color: #54545899;
-        --inline-code-color: #7676803d;
     }
 }
 
@@ -31,7 +38,7 @@
 /* Main */
 
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -44,20 +51,11 @@ body {
     max-width: 700px;
     margin: auto;
     padding: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-}
-
-.avatar {
-    display: block;
-    width: 120px;
-    height: 120px;
-    margin: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 1px rgba(40,43,48,.4), 0 1px 4px rgba(40,43,48,.1);
 }
 
 /* Headings */
@@ -73,15 +71,15 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 h4,
@@ -98,8 +96,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
+    color: var(--strong-text-color);
+    margin-top: 2.5rem;
+    margin-bottom: 0.8rem;
 }
 
 
@@ -135,17 +134,86 @@ h5+h6 {
     margin-top: 1rem;
 }
 
+/* Header */
 
-/* And here. */
 header {
+    display: block;
     margin-bottom: 2rem;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
 }
 
 .site-title {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
+.site-nav-list {
+    margin: 0;
+    text-transform: lowercase;
+}
+
+.blob {
+    padding: 2px 6px;
+    display: inline-block;
+    background: var(--accent-color);  
+    transform: skewX(-8deg); 
+}
+
+.blob > * {
+    transform: skewX(8deg); 
+    border: #191b1f;
+}
+
+/* About */
+
+.about-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.about-hero {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.about-info-headline {
+    margin: 0;
+}
+
+.about-info-subhead {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.about-info-body {
+    margin-top: 0.4rem;
+}
+
+.arrow-bullet {
+    position: relative;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    padding-left: 1.75rem;
+}
+
+.arrow-bullet:before {
+    content: "↳";
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+}
 
 /* Articles */
 
@@ -166,11 +234,12 @@ article h1 {
 a {
     color: var(--link-color);
     text-decoration: none;
+    border-bottom: 1px solid var(--link-color);
 }
 
 a:hover {
-    color: var(--link-color);
-    border-bottom: 1px solid var(--link-color);
+    color: var(--seconday-accent-color);
+    border-block-color: inherit;
 }
 
 a.link-plain,
@@ -195,7 +264,6 @@ a:hover.link-plain,
 
 /* Lists */
 
-
 /* Keep style on nested lists */
 ul li {
     list-style-type: disc;
@@ -214,7 +282,7 @@ ul li {
 }
 
 .list-inline li:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 0.6rem;
 }
 
 
@@ -247,7 +315,8 @@ video {
 blockquote {
     padding-left: 20px;
     margin-left: 10px;
-    border-left: 2px solid var(--border-color);
+    color: var(--text-color);
+    border-left: 3px solid var(--accent-color);
 }
 
 hr {
@@ -332,6 +401,14 @@ hr {
 
 /* Util */
 
+.secondary-text {
+    color: var(--secondary-text-color);
+}
+
+.tertiary-text {
+    color: var(--tertiary-text-color);
+}
+
 .hidden {
     display: none;
 }
@@ -349,7 +426,7 @@ hr {
 }
 
 .quiet {
-    color: var(--quiet-color);
+    color: var(--secondary-text-color);
 }
 
 strong,
@@ -392,15 +469,11 @@ small,
 }
 
 .footnotes {
-    border-top: 1px solid var(--quiet-color);
+    border-top: 1px solid var(--secondary-text-color);
 }
 
 .bordered {
     border: 1px solid var(--border-color);
-}
-
-.whitened {
-    background-color: white;
 }
 
 
@@ -413,20 +486,22 @@ small,
   See: https://github.com/jekyll/jekyll/issues/6446
 */
 
+.highlight {
+    border-radius: 6px;
+}
+
 pre {
     padding: 2px 10px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    border-left: 5px solid rgba(205, 233, 244, 1);
 }
 
 /* Inline code */
 code {
-    font-family: SFMono-Regular, SF Mono, Inconsolata, Source Code Pro, Menlo, Monaco, monospace;
+    font-family: SFMono-Regular,Menlo,Monaco,ui-monospace,Consolas,Liberation Mono,Courier New,monospace;
+    font-weight: 800;
     font-size: .85em;
-    padding: 0.2rem;
-    background-color: var(--inline-code-color);
-    border-radius: 4px;
+    color: black;
     /* Break inline code */
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -434,10 +509,9 @@ code {
 
 /* Code blocks */
 pre code {
-    font-size: .85em;
+    font-size: 0.8em;
+    color: white;
     padding: 0;
-    border: none;
-    background-color: inherit;
     /* Don't break code blocks */
     white-space: pre;
     word-wrap: normal;

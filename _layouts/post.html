@@ -3,13 +3,8 @@ layout: default
 ---
 
 <article class="pad4y">
-  <header>
+  <header class="center">
     <h1>{{ page.title | xml_escape }}</h1>
-    {% if page.description %}
-    <div class="quiet">
-      {{ page.description | xml_escape }}
-    </div>
-    {% endif %}
   </header>
 
   {{ content }}

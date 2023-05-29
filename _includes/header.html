@@ -1,12 +1,15 @@
-<header class="center">
-  <nav class="link-plain">
+<header>
+  <nav class="site-nav link-plain">
+    <span class="blob">
       <h1 class="site-title tightened">
         <a href="{{ "/" | relative_url }}">{{ site.author.name | xml_escape }}</a>
       </h1>
-      <ul class="list-unstyled list-inline widened mt1">
-        <li><a href="{{ "/posts/" | relative_url }}">Blog</a></li>
-        <li><a href="{{ site.author.github }}">GitHub</a></li>
-        <li><a href="{{ site.author.instagram }}">Instagram</a></li>
-      </ul>
+    </span>
+    
+    <ul class="site-nav-list list-inline list-unstyled widened">
+      <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
+      <li><a href="{{ site.author.github }}">GitHub</a></li>
+      <li><a href="{{ site.author.instagram }}">Instagram</a></li>
+    </ul>
   </nav>
 </header>
