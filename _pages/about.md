@@ -3,7 +3,7 @@ permalink: /about/
 ---
 
 <div class="about">
-  <img class="avatar" src="/assets/avatar-v1.jpg">
+  <img class="avatar" src="/assets/me.jpg">
   <p>
     Hi, I’m Arthur, an iOS developer from Hamburg, Germany. 👋
   </p>
