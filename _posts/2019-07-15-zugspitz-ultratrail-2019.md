@@ -9,16 +9,12 @@ When I signed up for the [Zugspitz Ultratrail](https://zugspitz-ultratrail.com/)
 
 It's tough to train for a mountain race if you don't live in the mountains. My training strategy consisted of road running during the week and heading out to the closest mountains every weekend: the Harz mountains. It's not the alps but it's a start. To get significant elevation in, I ran the steepest sections I could find [over and over again]({% post_url 2019-06-19-strava-api-mountain-summits %}).
 
-And that was necessary as the race is a challenging tour with 102 km and over 5000 m of climbing. It takes us on a counter-clockwise route around a mountain range called Wetterstein with its highest peak in Germany: Zugspitze.
+And that was necessary as the race is a challenging route with 102 km and over 5000 m of climbing. It takes us on a counter-clockwise tour around a mountain range called Wetterstein with its highest peak in Germany: Zugspitze.
 
 {% include figure.html src="/assets/2019-07-15-zut.jpg" alt="Race profile" %}
 
 Apart from climbing, I had to work on a few other areas before I felt confident enough to line up at the start. There's my fear of heights, for one. Running in darkness, also. I figured it would take me about 20 hours, so overnight and into the next morning. And finally, technical alpine terrain.
 
-
-<!-- ## Race Day -->
-
-<!-- {% include figure.html src="/assets/2019-07-15-zut5.jpg" alt="Grainau." %} -->
 
 {% include figure.html src="/assets/2019-07-15-zut9.jpg" caption="Electric atmosphere at the race briefing" alt="Electric atmosphere at the race briefing" %}
 
@@ -28,7 +24,7 @@ Sad news at the race briefing: The race directors announced the original route w
 
 {% include figure.html src="/assets/2019-07-15-zut10.png" alt="Message from the race directors" %}
 
-I would not get to run my first 100k. Disappointing but that's just what trail running is: being in tune with nature. Whatever the mountain throws at us, it's our job to adapt. I am thankful for the race directors for putting people's safety first.
+I would not get to run my first 100k. Disappointing but that's just what trail running is about: being in tune with nature. Whatever the mountain throws at us, it's our job to adapt. I am thankful for the race directors for putting people's safety first.
 
 This would now be a different race for me. I knew I could handle it easily seeing my peak training run had been a 70k, longer than the new route. So I threw my original strategy overboard and decided to just take it easy. Focus on spending time on the mountains, with beautiful scenery and cool people.
 
@@ -48,7 +44,7 @@ I joined a group of runners and we stayed together for the next 20 km. It was a 
 
 {% include figure.html src="/assets/2019-07-15-zut11.jpg" alt="Running with others." %}
 
-Crossing to the north side of the Wetterstein range, we came to the final climb: the Alpsitzbahn station at 2000 m. 50k into the race my legs started to get tired. Nothing unusual but I started to imagine if the route hadn't been changed and this was only the half way point. Would I make another 50k?
+Crossing to the north side of the Wetterstein range, we came to the final climb: the Alpspitzbahn station at 2000 m. 50k into the race my legs started to get tired. Nothing unusual but I started to imagine if the route hadn't been changed and this was only the half way point. Would I make another 50k?
 
 {% include figure.html src="/assets/2019-07-15-zut8.jpg" alt="Me." %}
 
