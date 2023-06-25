@@ -30,7 +30,7 @@ The graph also shows the relative complexity of the numeric types:
 - `Int64` → `SignedInteger` →  `SignedNumeric` → `Numeric` 
 - `Int64` → `FixedWidthInteger` →  `BinaryInteger` → `Numeric`
 
-If you haven't worked with integers in detail, you probably have never looked at these protocols in detail. There are many such barely visible protocols in the standard library.
+If you haven't worked with integers much, you probably have never looked at these protocols in detail. There are many such barely visible protocols in the standard library.
 
 It'd be interesting to see how the graph evolves with future Swift versions.
 
