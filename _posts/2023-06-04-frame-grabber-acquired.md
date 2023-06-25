@@ -37,7 +37,7 @@ Frame Grabber is a very accessible app, in every meaning of that word. It is fre
 
 I definitely did not want to betray that trust.
 
-At the same time, the app would change. That is a given. First, I guessed Frame Grabber would stop being free and switch to a subscription-model to recover the acquisition investment and increase profits. Second, I knew there is a good change that the app and its features would significantly change. 
+At the same time, the app would change, that is a given. First, I guessed Frame Grabber would stop being free and switch to a subscription-model to recover the acquisition investment and increase profits. Second, I knew there is a good chance that the app and its features would significantly change. 
 
 The first point is fine I figured: Users constantly urge me to charge for the app outside of donations. Going subscription would not be a problem. 
 
@@ -51,6 +51,7 @@ I had to let go. And I did.
 
 As soon as the process was done, everything felt right. I felt relief. And excitement. And pride. I made a product out of nothing. And I sold it! 
 
+So long, Frame Grabber. A wild ride from start to finish. 
+
 Along the way, I discovered my dream career: I want to create products for people.
 
-So long, Frame Grabber. A wild ride from start to finish. 
