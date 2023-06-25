@@ -27,7 +27,7 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - _private
+  - _drafts
   - README.md
   - LICENSE
   - vendor

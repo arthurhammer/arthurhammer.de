@@ -1,5 +1,5 @@
 ---
-title: Mountain Summits with turf.js & Strava API
+title: Mountain Summits using Strava API & turf.js
 description: Using the Strava API to figure out how often I've climbed a mountain.
 ---
 

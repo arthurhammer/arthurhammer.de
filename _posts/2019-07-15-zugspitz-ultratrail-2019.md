@@ -1,5 +1,5 @@
 ---
-title: "Race Report: Zugspitz Ultratrail 2019"
+title: "Race Report: Zugspitz Ultratrail"
 description: Running 100 km.
 ---
 
