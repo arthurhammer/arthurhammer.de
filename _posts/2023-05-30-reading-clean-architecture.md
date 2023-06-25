@@ -21,11 +21,11 @@ Most importantly, architecture is a team effort.
 
 ### Mobile Architecture
 
-In the mobile development world, the term architecture is often used interchangeably with MVVM, MVP, VIP, VIPER, TCA and the like. I have always felt these discussion fall short on important aspects.
+In the mobile development world, the term architecture is often used interchangeably with MVVM, MVP, VIP, VIPER, TCA and the like. But these discussions fall short on important aspects as they leave huge chunks of an app's architecture out.
 
-Knowing MVVM, I can design a single scene but what about the rest? Let's add Coordinator/Router to navigate between scenes, is that all? A large part of the architecture is still missing. What about the service and data layers? How do you slice your modules and how do you wire them up? How do you keep your dependency graph from spiraling out of control? And, finally, how do you keep everything extensible and maintainable while having multiple teams working on the same app?
+These patterns only tell us about how to design a single scene. Maybe multiple when we add a Coordinator/Router mechanism. Still, a large part of the architecture is missing. What about the service and data layers? How do we slice our modules and how do we decide what belongs in one module vs. the other? How do we connect modules without letting the dependency graph spiral out of control? And, finally, how do we keep the code extensible and maintainable while having multiple teams working on the same app?
 
-Apple has never helped us here. In contrast, the [Android documentation](https://developer.android.com/topic/architecture) is much more detailed and opinionated. It's a really good starting point! I have also found articles from larger teams insightful as they discuss exactly these issues (e.g. [JustEat](https://tech.justeattakeaway.com/2019/12/18/modular-ios-architecture-just-eat/) or [New Work](https://tech.new-work.se/di-in-a-modularized-project-in-swift-339fc242b4df)). And finally, connecting with others at conferences has really opened my eyes.
+There are important questions to answer. Apple has never helped us here. On the other hand, the [Android documentation](https://developer.android.com/topic/architecture) is much more detailed and opinionated. It's a really good starting point. I have also found articles from larger teams insightful as they have faced similar issuess (e.g. [JustEat](https://tech.justeattakeaway.com/2019/12/18/modular-ios-architecture-just-eat/) or [New Work](https://tech.new-work.se/di-in-a-modularized-project-in-swift-339fc242b4df)). Also, connecting with others at conferences has really opened my eyes.
 
 ### Clean Architecture
 
