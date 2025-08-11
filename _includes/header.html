@@ -1,10 +1,14 @@
 <header>
   <nav class="site-nav link-plain">
+    {% if page.url == "/" %}
+    <span></span>
+    {% else %}
     <span class="blob">
       <h1 class="site-title tightened">
         <a href="{{ "/" | relative_url }}">{{ site.author.name | xml_escape }}</a>
       </h1>
     </span>
+    {% endif %}
     
     <ul class="site-nav-list list-inline list-unstyled widened">
       <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
