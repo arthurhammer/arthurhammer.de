@@ -1,6 +1,7 @@
 ---
 title: "Reading: Clean Architecture"
 description: By Robert C. Martin.
+date: 2021-05-30
 ---
 
 At work, I have been working more on modularization and architecture topics recently. I wanted to dig deeper and picked up a copy of [Clean Architecture](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/) by Robert C. Martin. 

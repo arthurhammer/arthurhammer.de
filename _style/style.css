@@ -201,6 +201,83 @@ header {
     margin-top: 0.4rem;
 }
 
+.landing-primary .about-hero {
+    width: 118px;
+    height: 118px;
+}
+
+.landing-primary .landing-name {
+    padding: 2px 8px;
+    transform: skewX(-6deg);
+}
+
+.landing-primary .landing-name > * {
+    transform: skewX(6deg);
+}
+
+.landing-primary .about-info-headline {
+    font-size: 1.9rem;
+}
+
+.landing-primary .about-info-subhead {
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+    color: var(--secondary-text-color);
+}
+
+.landing-copy {
+    max-width: 62ch;
+}
+
+.landing-lead {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--strong-text-color);
+    font-size: 1.1rem;
+}
+
+.landing-cta-row {
+    margin-top: 1.25rem;
+}
+
+a.landing-cta {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.08rem 0.45rem;
+    text-decoration: none;
+}
+
+a:hover.landing-cta {
+    border-bottom-color: var(--border-color);
+}
+
+.landing-posts {
+    margin-top: 3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.landing-posts-title {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.landing-posts li {
+    margin-bottom: 0.45rem;
+}
+
+.landing-post-year {
+    color: var(--tertiary-text-color);
+    font-size: 0.82em;
+    margin-left: 0.4rem;
+}
+
 .arrow-bullet {
     position: relative;
     margin-bottom: 0.5rem;
@@ -238,8 +315,8 @@ a {
 }
 
 a:hover {
-    color: var(--seconday-accent-color);
-    border-block-color: inherit;
+    color: var(--link-color);
+    border-bottom-color: var(--link-color);
 }
 
 a.link-plain,
@@ -251,6 +328,7 @@ a.link-plain,
 
 a:hover.link-plain,
 .link-plain a:hover {
+    color: var(--link-color);
     border-bottom: 1px solid var(--link-color);
 }
 

@@ -3,51 +3,46 @@ layout: default
 ---
 
 <div class="about-container pad4y">
-  <div class="about-info mb4">
-    <img class="about-hero" src="/assets/me.jpg" alt="Profile Picture">
-    <div class="about-info-text">
-      <span class="blob">
-        <h1 class="about-info-headline tightened">
-          Arthur Hammer
-        </h1>
-      </span>
-      <h2 class="about-info-subhead secondary-text">
-        Mobile Engineering Lead ✨
-      </h2>
-      <div class="about-info-body">
+  <section class="landing-primary">
+    <div class="about-info mb2">
+      <img class="about-hero" src="/assets/me.jpg" alt="Profile Picture">
+      <div class="about-info-text">
+        <span class="blob landing-name">
+          <h1 class="about-info-headline tightened">
+            Arthur Hammer
+          </h1>
+        </span>
+        <h2 class="about-info-subhead secondary-text">
+          Mobile Engineering Lead
+        </h2>
+        <div class="about-info-body">
+        </div>
       </div>
     </div>
-  </div>
-  I have extensive experience in building delightful apps that are easy to use.
-  
-  <p>
-    I bridge the gap between product, design and engineering to see a vision through. I know when to be pragmatic and when to add that special attention to detail <a href="https://github.com/arthurhammer/FrameGrabber/blob/develop/docs/about.md#technical-challenges">to stand out from competitors</a>.    
-  </p>  
-  <p class="mb6">
-    If you create products that make a real difference, <strong><a href="mailto:hi@arthurhammer.de">let's chat</a></strong>.
-  </p>
+    <p class="landing-lead landing-copy">
+      I have extensive experience in building delightful apps that are easy to use.
+    </p>
+    
+    <p class="landing-copy">
+      I bridge the gap between product, design and engineering to see a vision through. I know when to be pragmatic and when to add that special attention to detail <a href="https://github.com/arthurhammer/FrameGrabber/blob/develop/docs/about.md#technical-challenges">to stand out from competitors</a>.    
+    </p>
+    <p class="landing-copy landing-cta-row mb6">
+      If you create products that make a real difference, <strong><a class="landing-cta" href="mailto:hi@arthurhammer.de">let's chat</a></strong>.
+    </p>
+  </section>
 
-  <h3>Posts</h3>
-
-  <nav>
-    {% for post in site.posts %}
-      {% assign year = post.date | date: "%Y" %}
-
-      {% if year != lastYear %}
-        {% unless forloop.first %}</ul>{% endunless %}
-        <h4 class="tertiary-text">{{ year }}</h4>
-        <ul class="list-unstyled">
-        {% assign lastYear = year %}
-      {% endif %}
-
-      <li class="mb2">
-        <a href="{{ post.url | relative_url }}" class="strong link-plain">{{ post.title | xml_escape }}</a>
-        {% if post.description %}
-        <div class="quiet small">{{ post.description | xml_escape }}</div>
-        {% endif %}
+  <section class="landing-posts">
+    <h3 class="landing-posts-title tertiary-text">Recent posts</h3>
+    <ul class="list-unstyled">
+      {% for post in site.posts limit:6 %}
+      <li>
+        <a href="{{ post.url | relative_url }}" class="link-plain">{{ post.title | xml_escape }}</a>
+        <span class="landing-post-year">{{ post.date | date: "%Y" }}</span>
       </li>
-
-      {% if forloop.last %}</ul>{% endif %}
-    {% endfor %}
-  </nav>
+      {% endfor %}
+    </ul>
+    <p class="small quiet mb1">
+      <a href="{{ "/blog/" | relative_url }}">View all posts</a>
+    </p>
+  </section>
 </div>
