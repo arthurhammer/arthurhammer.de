@@ -287,6 +287,24 @@ header {
     margin-left: 0.4rem;
 }
 
+.blog-post-description {
+    margin-top: 0.14rem;
+    max-width: 62ch;
+    line-height: 1.45;
+}
+
+.blog-posts li {
+    margin-bottom: 1.15rem;
+}
+
+.blog-posts li:last-child {
+    margin-bottom: 0;
+}
+
+.blog-posts .landing-post-year {
+    margin-left: 0.32rem;
+}
+
 .arrow-bullet {
     position: relative;
     margin-bottom: 0.5rem;
@@ -339,6 +357,12 @@ a:hover.link-plain,
 .link-plain a:hover {
     color: var(--seconday-accent-color);
     border-bottom: 1px solid var(--seconday-accent-color);
+}
+
+.site-title a,
+.site-title a:hover {
+    color: inherit;
+    border-bottom: none;
 }
 
 .button {
