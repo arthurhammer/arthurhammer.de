@@ -156,7 +156,10 @@ header {
 
 .site-nav-list {
     margin: 0;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.88rem;
+    color: var(--secondary-text-color);
 }
 
 .blob {
@@ -202,8 +205,12 @@ header {
 }
 
 .landing-primary .about-hero {
-    width: 118px;
-    height: 118px;
+    width: 100px;
+    height: 100px;
+}
+
+.landing-primary .about-info {
+    margin-bottom: 1.55rem;
 }
 
 .landing-primary .landing-name {
@@ -242,22 +249,23 @@ header {
     margin-top: 1.25rem;
 }
 
-a.landing-cta {
-    display: inline-block;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 0.08rem 0.45rem;
-    text-decoration: none;
+.landing-cta,
+.landing-cta:hover {
+    color: var(--seconday-accent-color);
+    border-bottom: 1px solid var(--seconday-accent-color);
 }
 
-a:hover.landing-cta {
-    border-bottom-color: var(--border-color);
+.landing-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--tertiary-text-color);
+    margin-top: 4.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .landing-posts {
-    margin-top: 3rem;
-    padding-top: 1.6rem;
-    border-top: 1px solid var(--border-color);
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .landing-posts-title {
@@ -266,6 +274,7 @@ a:hover.landing-cta {
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: var(--tertiary-text-color);
 }
 
 .landing-posts li {
@@ -315,8 +324,8 @@ a {
 }
 
 a:hover {
-    color: var(--link-color);
-    border-bottom-color: var(--link-color);
+    color: var(--seconday-accent-color);
+    border-bottom-color: var(--seconday-accent-color);
 }
 
 a.link-plain,
@@ -328,8 +337,8 @@ a.link-plain,
 
 a:hover.link-plain,
 .link-plain a:hover {
-    color: var(--link-color);
-    border-bottom: 1px solid var(--link-color);
+    color: var(--seconday-accent-color);
+    border-bottom: 1px solid var(--seconday-accent-color);
 }
 
 .button {
