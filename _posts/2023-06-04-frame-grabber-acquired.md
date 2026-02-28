@@ -1,5 +1,5 @@
 ---
-title: Frame Grabber is Acquired
+title: Ending My Indie Life
 description: I sold my app.
 ---
 
