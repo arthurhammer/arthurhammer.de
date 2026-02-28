@@ -6,9 +6,11 @@ A simple static site powered by [Jekyll](https://jekyllrb.com).
 
 ## Build
 
-Use a Ruby version manager that respects `.ruby-version` (for example `mise`, `asdf`, or `rbenv`).
+Make sure `rbenv` is installed.
 
 ### Setup
+
+Installs the Ruby version from `.ruby-version` and project gems:
 
     bin/setup
 

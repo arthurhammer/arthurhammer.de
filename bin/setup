@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if ! command -v rbenv >/dev/null 2>&1; then
+  echo "rbenv is required. Install rbenv first." >&2
+  exit 1
+fi
+
+RUBY_VERSION="$(<.ruby-version)"
+
+rbenv install -s "$RUBY_VERSION"
+
+if ! bundle -v >/dev/null 2>&1; then
+  gem install bundler --no-document
+fi
+
 bundle config set --local path "vendor/bundle"
 bundle install
