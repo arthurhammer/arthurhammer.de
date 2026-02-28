@@ -18,7 +18,7 @@ Use a Ruby version manager that respects `.ruby-version` (for example `mise`, `a
 
 ### Build site
 
-    bundle exec jekyll build
+    bin/build
 
 ## License
 
