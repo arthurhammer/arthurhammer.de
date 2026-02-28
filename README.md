@@ -6,17 +6,17 @@ A simple static site powered by [Jekyll](https://jekyllrb.com).
 
 ## Build
 
-Besides [ruby](https://www.ruby-lang.org), make sure [bundler](https://bundler.io) is installed. Jekyll itself is installed as a project dependency.
+Use a Ruby version manager that respects `.ruby-version` (for example `mise`, `asdf`, or `rbenv`).
 
-**Install dependencies**:
+### Setup
 
-    bundle install --path=vendor/bundle
+    bin/setup
 
-**Run a local server**:
+### Run local server
 
-    bundle exec jekyll serve --livereload
+    bin/serve
 
-**Build site**:
+### Build site
 
     bundle exec jekyll build
 

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
+ruby "3.1.6"
 
 # Added at 2017-05-29 13:27:34 +0200 by a:
 gem "jekyll", "~> 4.0"
